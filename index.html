@@ -8,10 +8,29 @@
         margin-left: auto;
         margin-right: auto;
       }
-      #nav {
+      nav {
+        background: linear-gradient(to top,#0B3954,#135e8a);
+        color: white;
+        font-family: adrianna;
+        font-size: 25px;
+        margin-left: 150px;
+        margin-right: 150px;
+        padding: 1px;
+      }
+      #portnav {
         text-align: center;
       }
-
+      .list {
+        display: inline;
+        list-style-type: '';
+        margin: 65px;
+      }
+      .list:hover {
+        color: #FF5A5F;
+      }
+      .list:active {
+        color: white;
+      }
     </style>
   </head>
   <body>
@@ -20,11 +39,17 @@
           src="images/emily.png"
           alt="logo"
         />
-    <div id="nav">
-      <p style="background-color: #0B3954; color: white; font-family: Adrianna; font-size: 22px; padding: 9px; word-spacing: 200px">Portfolio About Contact </p>
-    </div>
-
-    <img src="images/graphic_design/japan.jpg" alt="banner image"/>
+        <br>
+        <nav>
+          <ul id="portnav">
+          <li class="list">Portfolio <img width=15px src="images/chev.png"/></li>
+          <li class="list">About Me</li>
+          <li class="list">Contact Me</li>
+          </ul>
+        </nav>
+    <img
+    src="images/graphic_design/japan.jpg"
+    alt="banner image"/>
 
   </body>
 </html>
