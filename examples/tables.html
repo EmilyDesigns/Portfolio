@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>HTML Tables Example</title>
+    <style>
+      #uglyTable,
+      #uglyTable caption,
+      #uglyTable th,
+      #uglyTable td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 12px;
+      }
+      #uglyTable {
+        margin-bottom: 48px;
+      }
+      #uglyTableCol {
+        background-color: #DDDDFF;
+      }
+      #uglyHeader {
+        background-color: pink;
+      }
+      #prettyTable {
+        border-collapse: collapse;
+      }
+      #prettyTable th {
+        padding-bottom: 12px;
+        padding-right: 24px;
+      }
+      #prettyTable td {
+        padding: 4px 0;
+      }
+      #prettyTable tr:nth-child(even) {
+        background-color: #F0F0F0;
+      }
+      #prettyTable tr:hover {
+        background-color: #ebb4f0;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="uglyTable">
+      <caption>This is an ugly table</caption>
+      <colgroup>
+        <col id="uglyTableCol" span="2">
+        <col id="uglyTableCol2">
+        <col>
+        <col>
+      </colgroup>
+      <thead>
+        <tr id="uglyHeader">
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Favorite Animal</th>
+          <th>Favorite Food</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Emily</td>
+          <td>Llauro</td>
+          <td>Monkey</td>
+          <td>Steak</td>
+        </tr>
+        <tr>
+          <td>Juuzou</td>
+          <td>Suzuya</td>
+          <td>Cat</td>
+          <td>Donut</td>
+        </tr>
+        <tr>
+          <td>Monkey</td>
+          <td>Luffy</td>
+          <td>Chopper</td>
+          <td>Meat</td>
+        </tr>
+        <tr>
+          <td>Light</td>
+          <td>Yagami</td>
+          <td>Ryuk</td>
+          <td>Potato Chips</td>
+        </tr>
+      </tbody>
+    </table>
+    <table id="prettyTable">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Favorite Animal</th>
+          <th>Favorite Food</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Emily</td>
+          <td>Llauro</td>
+          <td>Monkey</td>
+          <td>Steak</td>
+        </tr>
+        <tr>
+          <td>Juuzou</td>
+          <td>Suzuya</td>
+          <td>Cat</td>
+          <td>Donut</td>
+        </tr>
+        <tr>
+          <td>Monkey</td>
+          <td>Luffy</td>
+          <td>Chopper</td>
+          <td>Meat</td>
+        </tr>
+        <tr>
+          <td>Light</td>
+          <td>Yagami</td>
+          <td>Ryuk</td>
+          <td>Potato Chips</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
