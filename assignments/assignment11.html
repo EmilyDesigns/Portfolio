@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 11</title>
+    <style>
+      .flexContainer1 {
+        background-color: lightblue;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: normal;
+      }
+      .flexChild1 {
+        background-color: pink;
+        border: 1px solid black;
+        border-radius: 4px;
+        height: 50px;
+        width: 50px;
+        font-size: 45px;
+        font-family: arial;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px;
+      }
+      .flexChildTall1 {
+        background-color: pink;
+        border: 1px solid black;
+        border-radius: 4px;
+        height: 100px;
+        width: 50px;
+        font-size: 45px;
+        font-family: arial;
+        font-weight: bold;
+        text-align: center;
+      }
+      .flexChildWide1 {
+        background-color: pink;
+        border: 1px solid black;
+        border-radius: 4px;
+        height: 50px;
+        width: 100px;
+        font-size: 45px;
+        font-family: arial;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      /* container 2 */
+
+      .flexContainer2 {
+        background-color: lightgray;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: baseline;
+      }
+      .flexChild2 {
+        background-color: lavender;
+        border: 1px solid black;
+        border-radius: 4px;
+        height: 50px;
+        width: 50px;
+        font-size: 45px;
+        font-family: arial;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px;
+      }
+      .flexChildTall2 {
+        background-color: lavender;
+        border: 1px solid black;
+        border-radius: 4px;
+        height: 100px;
+        width: 50px;
+        font-size: 45px;
+        font-family: arial;
+        font-weight: bold;
+        text-align: center;
+      }
+      .flexChildWide2 {
+        background-color: lavender;
+        border: 1px solid black;
+        border-radius: 4px;
+        height: 50px;
+        width: 100px;
+        font-size: 45px;
+        font-family: arial;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      /* container 3 */
+
+      .flexContainer3 {
+        background-color: beige;
+        border-radius: 4px;
+        display: flex;
+        height: 420px;
+        flex-direction: column-reverse;
+        flex-wrap: wrap-reverse;
+        justify-content: flex-start;
+        align-items: fist-baseline;
+      }
+      .flexChild3 {
+        background-color: salmon;
+        border: 1px solid black;
+        border-radius: 4px;
+        height: 50px;
+        width: 50px;
+        font-size: 45px;
+        font-family: arial;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px;
+      }
+      .flexChildTall3 {
+        background-color: salmon;
+        border: 1px solid black;
+        border-radius: 4px;
+        height: 100px;
+        width: 50px;
+        font-size: 45px;
+        font-family: arial;
+        font-weight: bold;
+        text-align: center;
+      }
+      .flexChildWide3 {
+        background-color: salmon;
+        border: 1px solid black;
+        border-radius: 4px;
+        height: 50px;
+        width: 100px;
+        font-size: 45px;
+        font-family: arial;
+        font-weight: bold;
+        text-align: center;
+      }
+      /* container 4 */
+      .flexContainer4 {
+        background-color: gray;
+        height: 500px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+      .flexChild4 {
+        background-color: #79edce;
+        border: 1px solid black;
+        border-radius: 4px;
+        height: 50px;
+        width: 50px;
+        font-size: 45px;
+        font-family: arial;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px;
+      }
+      .flexChildTall4 {
+        background-color: #79edce;
+        border: 1px solid black;
+        border-radius: 4px;
+        height: 100px;
+        width: 50px;
+        font-size: 45px;
+        font-family: arial;
+        font-weight: bold;
+        text-align: center;
+      }
+      .flexChildWide4 {
+        background-color: #79edce;
+        border: 1px solid black;
+        border-radius: 4px;
+        height: 50px;
+        width: 100px;
+        font-size: 45px;
+        font-family: arial;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexContainer1">
+      <div class="flexChild1">A</div>
+      <div class="flexChild1 flexChildTall1">B</div>
+      <div class="flexChild1 flexChildWide1">C</div>
+      <div class="flexChild1 flexChildTall1">D</div>
+    </div>
+    <div class="flexContainer2">
+      <div class="flexChild2">A</div>
+      <div class="flexChild2 flexChildTall2">B</div>
+      <div class="flexChild2 flexChildWide2">C</div>
+      <div class="flexChild2 flexChildTall2">D</div>
+    </div>
+    <div class="flexContainer3">
+      <div class="flexChild3">A</div>
+      <div class="flexChild3 flexChildTall3">B</div>
+      <div class="flexChild3 flexChildWide3">C</div>
+      <div class="flexChild3 flexChildTall3">D</div>
+    </div>
+    <div class="flexContainer4">
+      <div class="flexChild4">A</div>
+      <div class="flexChild4 flexChildTall4">B</div>
+      <div class="flexChild4 flexChildWide4">C</div>
+      <div class="flexChild4 flexChildTall4">D</div>
+    </div>
+  </body>
+</html>
+<!--child-->
+background-color: lavender;
+border: 2px solid grey;
+border-radius: 4px;
+box-sizing: border-box;
+font-size: 24px;
+font-weight: bold;
+height: 50px;
+margin: 10px;
+padding: 8px 14px;
+width: 50px;
+<!--container-->
+background-color: darksalmon;
+border-radius: 4px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: flex-end;
+align-items: baseline;
