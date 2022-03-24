@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 13</title>
+    <style>
+      .padding {
+        padding: 20px;
+      }
+      .griditem1 {
+        background: linear-gradient(to top,#eb3d57,#731c29);
+        color: white;
+        font-family: verdana;
+        font-size: 77px;
+        font-weight: bold;
+        font-color: white;
+        grid-area: header;
+      }
+      .griditem2 {
+        background-color: #380e14;
+        font-family: verdana;
+        grid-area: sidenav;
+      }
+      .griditem3 {
+        background-color: #2e2e2e;
+        color: white;
+        font-family: verdana;
+        font-weight: bold;
+        font-size: 40px;
+        grid-area: character;
+      }
+      .griditem4 {
+        background-color: #e3bfbf;
+        grid-area: content2;
+      }
+      .griditem5 {
+        background-color: black;
+        grid-area: content3;
+        overflow: hidden;
+      }
+      .griditem6 {
+        background-color: #dbdbdb;
+        border: 5px solid #2b2b2b;
+        grid-area: photo;
+      }
+      .thing {
+        background-color: #bd6c6c;
+        font-family: verdana;
+        grid-area: thing;
+      }
+      .sidething {
+        background-color: #9c9c9c;
+        font-family: verdana;
+        grid-area: sidething;
+      }
+      .griditem7 {
+        background-color: #4a4a4a;
+        color: white;
+        font-family: verdana;
+        font-size: 25px;
+        grid-area: footer;
+      }
+      .gridcontainer {
+        display: grid;
+        grid-template-columns: 15% 60.3% 4% 5% 15%;
+        grid-template-rows: 100px 50px 100px 100px 100px;
+        grid-gap: 4px;
+        grid-template-areas:
+        "header header header header header"
+        "header header header header header"
+        "sidenav character character character character"
+        "sidenav content2 content3 photo photo"
+        "sidenav content2 content3 photo photo"
+        "sidenav content2 content3 photo photo"
+        "sidenav content2 content3 sidething thing"
+        "footer footer footer footer footer"
+        ;
+      }
+      ul {
+        list-style-type: none;
+        padding-inline-start: 0px;
+      }
+      hr {
+        border: 2px solid white;
+      }
+      #bars {
+        border: 2px dotted #b89c9c;
+      }
+      #score {
+        background: linear-gradient(hotpink,blue);
+        color: white;
+        display: inline;
+        font-weight: bold;
+
+      }
+      h3 {
+        color: white;
+        font-weight: regular;
+      }
+      h2 {
+        font-family: verdana;
+        font-size: 40px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      p {
+        font-family: verdana;
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gridcontainer">
+      <div class="griditem1 padding">Cute Characters</div>
+      <div class="griditem2 padding">
+        <h3>Anime Series</h3>
+        <ul>
+          <a href="#"><li>Assassination Classroom</li></a>
+          <br>
+          <a href="#"><li>Attack on Titan</li></a>
+          <br>
+          <a href="#"><li>Death Note</li></a>
+          <br>
+          <a href="#"><li>Demon Slayer</li></a>
+          <br>
+          <a href="#"><li>Dr. Stone</li></a>
+          <br>
+          <a href="#"><li>Hunter x Hunter</li></a>
+          <br>
+          <a href="#"><li>One Piece</li></a>
+          <br>
+          <a href="#"><li>Tokyo Ghoul</li></a>
+        </ul>
+      </div>
+      <div class="griditem3 padding"><i>TOKYO GHOUL CHARACTERS - JUUZOU SUZUYA</i></div>
+      <div class="griditem4 padding">
+        <h2>Cuteness Rating</h2>
+        <p id="score">10/10</p>
+        <hr id="bars">
+        <h2>About</h2>
+        <p>Juuzou Suzuya is a special class investigator of the CCG (Commission of Counter Ghoul).
+           His job is to eradicate every dangerous ghoul in sight to protect citizens from turning into dinner.</p>
+        <hr id="bars">
+        <h2>Appearance</h2>
+           <p>Juuzou is a short, skinny, cute little investigator with shaggy white hair.  He sports blue suspenders,
+             a light pink button-down shirt with funky-colored buttons, red slippers, and baggy black trousers.
+             He is never found without his red hairclips formed into the roman numeral XIII (13).  Juuzou is also
+             adorned in red stitches that can usually be found on his lip, eyelid, arms, neck, and sometimes earlobes.</p>
+        <hr id="bars">
+      </div>
+      <div class="griditem5 padding"><img style="width: 1530px" src="../images/stripes.jpg" alt="stripes" /></div>
+      <div class="griditem6 padding"><img style="width: 415px" src="../images/suzu.jpg" alt="juuzou suzuya" /></div>
+      <div class="thing padding">
+        Juuzou Suzuya (鈴屋 什造)
+        <br>
+        <hr>
+        <br>
+        Male
+        <br>
+        <hr>
+        <br>
+        19
+        <br>
+        <hr>
+        <br>
+        160 cm
+        <br>
+        <hr>
+      </div>
+      <div class="sidething padding">
+        Name
+        <br>
+        <hr>
+        <br>
+        Gender
+        <br>
+        <hr>
+        <br>
+        Age
+        <br>
+        <hr>
+        <br>
+        Height
+        <br>
+        <hr>
+      </div>
+      <div class="griditem7 padding">&copy 2022 Cute Characters Inc. Emily's 13th Assignment</div>
+    </div>
+  </body>
+</html>

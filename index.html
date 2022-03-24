@@ -36,10 +36,37 @@
       margin-left: auto;
       margin-right: auto;
     }
-
+    /* no float
     #long-cat {
       float: right;
     }
+    */
+    /*display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: baseline; */
+    .container {
+      display: grid;
+      grid-template-rows: 25% 25% 25% 25%;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 5px;
+      align-items: space-around;
+
+    }
+    .img:hover {
+      opacity: 60%;
+    }
+    .img:active {
+      opacity: 40%;
+    }
+    .square {
+      width: 400px;
+      height: 400px;
+      background-color: lightblue;
+      overflow: hidden;
+      border: 1px solid navy;
+    }
+
 
     </style>
   </head>
@@ -70,18 +97,43 @@
         <h2 id="GDport">Portfolio</h2>
         <br>
         <br>
+        <!--GALLERY-->
         <!--line 1-->
-        <img style="width: 450px" src="images/graphic_design/watch.jpg" alt="watch" />
-        <img style="width: 450px" src="images/graphic_design/dogred.gif" alt="dog_ad" />
-        <img style="width: 600px" src="images/graphic_design/shoe_ad.jpg" alt="shoe_ad" />
+        <div style="background-color: pink" class="container">
+          <div class="square">
+            <a class="img" href ="#"><img class="flexChild" style="width: 450px" src="images/graphic_design/watch.jpg" alt="watch" /></a>
+          </div>
+          <div class="square">
+            <a class="img" href ="#"><img class="flexChild" style="width: 450px" src="images/graphic_design/dogred.gif" alt="dog_ad" /></a>
+          </div>
+          <div class="square">
+            <a class="img" href ="#"><img class="flexChild" style="width: 600px" src="images/graphic_design/shoe_ad.jpg" alt="shoe_ad" /></a>
+          </div>
         <!--line 2-->
-        <img style="width: 437px" src="images/graphic_design/smoothie.jpg" alt="smoothie" />
-        <img style="width: 455px" src="images/graphic_design/japan.jpg" alt="japan" />
-        <img style="width: 449px" src="images/graphic_design/photoedit.jpg" alt="photo_edit" />
-        <img id="long-cat" style="width: 200px" src="images/graphic_design/catlong.jpg" alt="cat_ad" />
-        <img style="width: 469px" src="images/graphic_design/soup.jpg" alt="soupswimmer" />
-        <img style="width: 426px" src="images/graphic_design/milk.jpg" alt="milkswimmer" />
-        <img style="width: 446px" src="images/graphic_design/wishtree.jpg" alt="wishtree" />
+          <div class="square">
+            <a class="img" href ="#"><img class="flexChild" style="width: 437px" src="images/graphic_design/smoothie.jpg" alt="smoothie" /></a>
+          </div>
+          <div class="square">
+            <a class="img" href ="#"><img class="flexChild" style="width: 455px" src="images/graphic_design/japan.jpg" alt="japan" /></a>
+          </div>
+          <div class="square">
+            <a class="img" href ="#"><img class="flexChild" style="width: 449px" src="images/graphic_design/photoedit.jpg" alt="photo_edit" /></a>
+          </div>
+          <div class="square">
+            <a class="img" href ="#"><img class="flexChild" style="width: 469px" src="images/graphic_design/soup.jpg" alt="soupswimmer" /></a>
+          </div>
+          <div class="square">
+            <a class="img" href ="#"><img class="flexChild" style="width: 426px" src="images/graphic_design/milk.jpg" alt="milkswimmer" /></a>
+          </div>
+          <div class="square">
+            <a class="img" href ="#"><img class="flexChild" style="width: 446px" src="images/graphic_design/wishtree.jpg" alt="wishtree" /></a>
+          </div>
+          <!--cat
+          <div class="square">
+            <a class="img" href ="#"><img class="flexChild" id="long-cat" style="width: 200px" src="images/graphic_design/catlong.jpg" alt="cat_ad" /></a>
+          </div>
+          -->
+        </div>
         <footer>
           <div id="logo2">
             EL
