@@ -14,6 +14,7 @@
       margin-right: 336px;
       margin-left: 336px;
       height: 3500px;
+      overflow: hidden;
     }
 
     #GD {
@@ -36,37 +37,44 @@
       margin-left: auto;
       margin-right: auto;
     }
-    /* no float
-    #long-cat {
-      float: right;
-    }
-    */
-    /*display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    align-items: baseline; */
-    .container {
-      display: grid;
-      grid-template-rows: 25% 25% 25% 25%;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-gap: 5px;
-      align-items: space-around;
-
-    }
     .img:hover {
       opacity: 60%;
     }
     .img:active {
       opacity: 40%;
     }
-    .square {
-      width: 400px;
-      height: 400px;
-      background-color: lightblue;
-      overflow: hidden;
-      border: 1px solid navy;
+    .GDgallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 4px;
+      align-items: center;
     }
-
+    .gdphoto img {
+      width: 100%;
+    }
+    .gdphoto {
+      background-color: red;
+      box-sizing: border-box;
+      width: 385px;
+      height: 385px;
+      overflow: hidden;
+    }
+    header {
+      margin: 100px;
+    }
+    h2 {
+      color: #0B3954;
+      font-family: adrianna;
+      font-size: 34px;
+      text-align: center;
+    }
+    #button {
+      background-color: #FF5A5F;
+      font-family: myriad pro;
+      color: white;
+      display: inline-block;
+      padding: 10px;
+    }
 
     </style>
   </head>
@@ -93,54 +101,76 @@
         <br>
         <br>
         <br>
-        <h1 id="GD">Graphic Design</h1>
-        <h2 id="GDport">Portfolio</h2>
+        <header>
+          <h1 id="GD">Graphic Design</h1>
+          <h2 id="GDport">Portfolio</h2>
+        </header>
+        <main class="GDgallery">
+          <div class="gdphoto">
+            <img src="images/graphic_design/watch.jpg" alt="watch" />
+          </div>
+          <div class="gdphoto">
+            <img style="width: 527px"src="images/graphic_design/milk.jpg" alt="watch" />
+          </div>
+          <div class="gdphoto">
+            <img style="width: 597px" src="images/graphic_design/japan.jpg" alt="watch" />
+          </div>
+          <div class="gdphoto">
+            <img style="width: 607px" src="images/graphic_design/smoothie.jpg" alt="watch" />
+          </div>
+          <div class="gdphoto">
+            <img style="width: 390px" src="images/graphic_design/doubleEX.jpg" alt="watch" />
+          </div>
+          <div class="gdphoto">
+            <img src="images/graphic_design/dogred.gif" alt="watch" />
+          </div>
+          <div class="gdphoto">
+            <img style="width: 465px" src="images/graphic_design/airbnb1.jpg" alt="watch" />
+          </div>
+          <div class="gdphoto">
+            <img style="width: 500px" src="images/graphic_design/shoe_ad.jpg" alt="watch" />
+          </div>
+          <div class="gdphoto">
+            <img style="width: 585px" src="images/graphic_design/soup.jpg" alt="watch" />
+          </div>
+          <div class="gdphoto">
+            <img src="images/graphic_design/stars.png" alt="watch" />
+          </div>
+          <div class="gdphoto">
+            <img style="width: 465px" src="images/graphic_design/orangecat.jpg" alt="watch" />
+          </div>
+          <div class="gdphoto">
+            <img src="images/graphic_design/catad.jpg" alt="watch" />
+          </div>
+          <div class="gdphoto">
+            <img style="width: 580px" src="images/graphic_design/photoedit.jpg" alt="watch" />
+          </div>
+          <div class="gdphoto">
+            <img src="images/graphic_design/catlong.jpg" alt="watch" />
+          </div>
+          <div class="gdphoto">
+            <img src="images/graphic_design/foodie.jpg" alt="watch" />
+          </div>
+          <div class="gdphoto">
+            <img src="images/graphic_design/coolwear.jpg" alt="watch" />
+          </div>
+        </main>
         <br>
         <br>
+        <br>
+        <h2>Like What You See?</h2>
+        <br>
+        <br>
+        <div id="button">
+          Contact Me
+        </div>
         <!--GALLERY-->
         <!--line 1-->
-        <div style="background-color: pink" class="container">
-          <div class="square">
-            <a class="img" href ="#"><img class="flexChild" style="width: 450px" src="images/graphic_design/watch.jpg" alt="watch" /></a>
-          </div>
-          <div class="square">
-            <a class="img" href ="#"><img class="flexChild" style="width: 450px" src="images/graphic_design/dogred.gif" alt="dog_ad" /></a>
-          </div>
-          <div class="square">
-            <a class="img" href ="#"><img class="flexChild" style="width: 600px" src="images/graphic_design/shoe_ad.jpg" alt="shoe_ad" /></a>
-          </div>
-        <!--line 2-->
-          <div class="square">
-            <a class="img" href ="#"><img class="flexChild" style="width: 437px" src="images/graphic_design/smoothie.jpg" alt="smoothie" /></a>
-          </div>
-          <div class="square">
-            <a class="img" href ="#"><img class="flexChild" style="width: 455px" src="images/graphic_design/japan.jpg" alt="japan" /></a>
-          </div>
-          <div class="square">
-            <a class="img" href ="#"><img class="flexChild" style="width: 449px" src="images/graphic_design/photoedit.jpg" alt="photo_edit" /></a>
-          </div>
-          <div class="square">
-            <a class="img" href ="#"><img class="flexChild" style="width: 469px" src="images/graphic_design/soup.jpg" alt="soupswimmer" /></a>
-          </div>
-          <div class="square">
-            <a class="img" href ="#"><img class="flexChild" style="width: 426px" src="images/graphic_design/milk.jpg" alt="milkswimmer" /></a>
-          </div>
-          <div class="square">
-            <a class="img" href ="#"><img class="flexChild" style="width: 446px" src="images/graphic_design/wishtree.jpg" alt="wishtree" /></a>
-          </div>
-          <!--cat
-          <div class="square">
-            <a class="img" href ="#"><img class="flexChild" id="long-cat" style="width: 200px" src="images/graphic_design/catlong.jpg" alt="cat_ad" /></a>
-          </div>
-          -->
-        </div>
+
         <footer>
           <div id="logo2">
             EL
           </div>
         </footer>
-     <!--White Center-->
-     </div>
-     <!--White Center-->
   </body>
 </html>
