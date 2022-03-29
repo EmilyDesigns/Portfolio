@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Transitions Example</title>
+    <style>
+      #transition1 {
+        transition: color 0.5s;
+      }
+      #transition1:hover {
+        color: red;
+      }
+
+      #transition2 {
+        transition-property: transform;
+        transition-duration: 2s;
+        /* ease, ease-in, ease-out, linear */
+        transition-timing-function: ease;
+        transition-delay: 0s;
+      }
+      #transition2:hover {
+        transform: scale(5);
+        transform-origin: left;
+      }
+      #box {
+        box-sizing: border-box;
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        transition:
+          border-radius 2s,
+          background-color 2s;
+      }
+      #box:hover {
+        background-color: blue;
+        border-radius: 100%;
+      }
+
+      #gen {
+        height: 200px;
+        transition: transform 2s, opacity 2s;
+      }
+      #gen:hover {
+        transform: scale(2) rotate(180deg) translateY(200px);
+        opacity: 0.25;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="transition1">
+      This is a basic transition.
+    </h1>
+    <h2 id="transition2">
+      This is a another transition.
+    </h2>
+    <div id="box"></div>
+    <img id="gen" src="../images/gen.jpg" alt="gen" />
+  </body>
+</html>

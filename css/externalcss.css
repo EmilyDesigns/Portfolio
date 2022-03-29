@@ -10,8 +10,8 @@ body {
 #bg-white {
   background: white;
   display: block;
-  margin-right: 336px;
-  margin-left: 336px;
+  margin-right: 10%;
+  margin-left: 10%;
   height: 2000px;
 }
 nav {
