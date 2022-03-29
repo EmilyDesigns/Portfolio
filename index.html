@@ -7,20 +7,6 @@
     body {
       background-color: #F7F9F7;
     }
-    @media screen and (max-width: 480px) {
-      #bg-white {
-        background: white;
-        display: block;
-        margin-right: 0%;
-        margin-left: 0%;
-        height: auto;
-        overflow: hidden;
-      }
-      body {
-        background-color: lavender;
-      }
-    }
-
     #bg-white {
       background: white;
       display: block;
@@ -31,15 +17,16 @@
     }
 
     #GD {
-      color: #FE5A5F;
+      color: white;
       font-family: adrianna;
       font-size: 55px;
       text-align: center;
       line-height: 2px;
+      margin-top: 185px;
     }
 
     #GDport {
-      color: #FE5A5F;
+      color: white;
       font-family: adrianna;
       font-size: 40px;
       text-align: center;
@@ -58,22 +45,31 @@
     }
     .GDgallery {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-gap: 4px;
+      grid-template-columns: 1fr 1fr 1fr 0.5fr;
+      grid-row-gap: 5.5%;
       align-items: center;
+      justify-content: space-around;
     }
     .gdphoto img {
       width: 100%;
     }
     .gdphoto {
-      background-color: red;
+      background-color: gray;
       box-sizing: border-box;
       width: 385px;
       height: 385px;
       overflow: hidden;
     }
     header {
-      margin: 100px;
+      padding: 4%;
+      margin-bottom: 3%; /*100px*/
+      height: 400px;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: gray;
+      background-image: url(images/graphic_design/japan.jpg);
     }
     h2 {
       color: #0B3954;
@@ -90,8 +86,32 @@
       margin: center;
     }
     .contact {
-      background-color: lime;
+      background-color: gray;
       display: grid;
+    }
+
+    @media screen and (max-width: 480px) {
+      #bg-white {
+        background: white;
+        display: block;
+        margin-right: 0%;
+        margin-left: 0%;
+        height: auto;
+        overflow: hidden;
+      }
+      #GD {
+        font-size: 37px;
+      }
+      #GDport {
+        font-size: 22px;
+      }
+      .list {
+        margin: 30%;
+        line-height: 1.5;
+      }
+      header {
+        margin-bottom: 10%;
+      }
     }
 
     </style>
