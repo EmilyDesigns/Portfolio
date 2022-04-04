@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>HELLO WORLD</title>
+    <title>George R. R. Martin | Website of author George R. R. Martin</title>
     <link href='https://fonts.googleapis.com/css?family=Montaga' rel='stylesheet' type='text/css'>
     <style>
 
@@ -12,15 +12,15 @@
       }
 
       @media screen and (min-width: 480px) {
-          
+
         }
         header {
           background-color: ;red;
           display: grid;
           grid-template-columns: auto 5fr 2fr;
           grid-template-rows: auto;
-          margin-left: 28.4%;
-          margin-right: 28.4%;
+          margin-left: 28vw;
+          margin-right: 28vw;
         }
         #shield {
           background-color: ;yellow;
@@ -34,12 +34,20 @@
           justify-content: flex-end;
           display: flex;
         }
-        nav {
+        nav ul{
           background: linear-gradient(to top,#d9d9d9,#f7f7f7);
-          display: grid;
-          margin-left: 28.4%;
-          margin-right: 28.4%;
-          grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+          margin-left: 28vw;
+          margin-right: 28vw;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          list-style-type: none;
+          justify-content: space-around;
+          padding: 0;
+        }
+        nav ul li {
+          flex: 1;
+          text-align: center;
         }
         .navitem {
           font-family: 'Montaga', serif;
@@ -55,14 +63,18 @@
         }
         section {
           background-color: pink;
-          margin-left: 28.4%;
-          margin-right: 28.4%;
+          margin-left: 28vw;
+          margin-right: 28vw;
           display: grid;
           grid-template-rows: 1fr auto 5fr;
           grid-row-gap: 4px;
         }
         .slide {
           background-color: red;
+          background-image: url(images/slide.jpeg);
+          background-size: 100%;
+          background-repeat: no-repeat;
+          height: 255px;
         }
         .Hcardholder {
           background-color: cyan;
@@ -76,7 +88,7 @@
         .cardsNcontent {
           background-color: lavender;
           display: grid;
-          grid-template-columns: 1fr 2fr;
+          grid-template-columns: 1fr 1fr 1fr;
           grid-column-gap: 4px;
           margin-top: 1%;
 
@@ -91,13 +103,14 @@
         }
         .article {
           background-color: seagreen;
+          grid-column: 2 / 4;
         }
     </style>
   </head>
   <body>
       <header>
         <div id="shield">
-          <img style="width: 88px" src="images/shield.jpeg" alt="shield"/>
+          <!--<img style="width: 88px" src="images/shield.jpeg" alt="shield"/>-->
         </div>
         <div id="george">
           <img src="images/header.jpeg" alt="header"/>
@@ -110,31 +123,19 @@
       </header>
      <main>
         <nav>
-          <div class="navitem">
-            <a href="#">HOME</a>
-          </div>
-          <div class="navitem">
-            <a href="#">NOT A BLOG</a>
-          </div>
-          <div class="navitem">
-            <a href="#">ABOUT GEORGE</a>
-          </div>
-          <div class="navitem">
-            <a href="#">BOOKS</a>
-          </div>
-          <div class="navitem">
-            <a href="#">FOR FANS</a>
-          </div>
-          <div class="navitem">
-            <a href="#">NEWS</a>
-          </div>
-          <div class="navitem">
-            <a href="#">MERCHANDISE</a>
-          </div>
+          <ul>
+            <a href="#"><li>HOME</li></a>
+            <a href="#"><li>NOT A BLOG</li></a>
+            <a href="#"><li>ABOUT GEORGE</li></a>
+            <a href="#"><li>BOOKS</li></a>
+            <a href="#"><li>FOR FANS</li></a>
+            <a href="#"><li>NEWS</li></a>
+            <a href="#"><li>MERCHANDISE</li></a>
+          </ul>
         </nav>
       <section>
         <div class="slide">
-          <img style="width: 100%" src="images/slide.jpeg" alt="slide" />
+          <!--<img style="width: 50vw" src="images/slide.jpeg" alt="slide" />-->
         </div>
         <div class="Hcardholder">
           <div class="Hcard">
@@ -150,10 +151,10 @@
         <div class="cardsNcontent">
           <div class="Vcards">
             <div class="verticalCard">
-              <img src="images/card4V.jpeg" alt="card4" />
+              <!--<img src="images/card4V.jpeg" alt="card4" />-->
             </div>
             <div class="verticalCard">
-              #####<Eimg src="images/card4V.jpeg" alt="card4" />
+              #####<!--<img src="images/card4V.jpeg" alt="card4" />-->
             </div>
           </div>
           <div class="article">
