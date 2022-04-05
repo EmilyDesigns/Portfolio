@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 14</title>
+    <style>
+      label {
+        display: block;
+        font-size: 20px;
+        font-family: verdana;
+      }
+      p {
+        font-size: 20px;
+        font-family: verdana;
+        margin: 30px;
+      }
+      #radio label {
+        display: inline;
+      }
+      legend {
+        font-size: 35px;
+        font-family: verdana;
+        background-color: #575757;
+        border: 4px inset teal;
+        color: white;
+        padding: 15px;
+      }
+      h2 {
+        margin: 30px;
+        font-size: 25px;
+        font-family: verdana;
+      }
+      fieldset {
+        border: 4px inset teal;
+        margin-right: 950px;
+      }
+      #text {
+        margin: 30px;
+      }
+      #radio {
+        margin: 30px;
+      }
+      input[value] {
+        font-family: verdana;
+      }
+      input[type="text"] {
+        background-color: #eddead;
+        font-size: 16px;
+        border-radius: 4px;
+        border: 2px solid gray;
+        padding: 12px;
+        width: 500px;
+      }
+      .checkboxLabels {
+        display: inline;
+      }
+      input[type="checkbox"] {
+        margin-left: 30px;
+      }
+      input[type="submit"] {
+        margin: 30px;
+        margin-top: 75px;
+        background: linear-gradient(to top, teal, black);
+        border-radius: 10px;
+        border: 0;
+        padding: 15px;
+        color: white;
+        font-size: 20px;
+      }
+      input[type="submit"]:active {
+        background: linear-gradient(to top, black, teal);
+      }
+      input[type="reset"] {
+        border: 0;
+        border-radius: 4px;
+        background: linear-gradient(to top, teal, black);
+        color: white;
+        display: block;
+        margin: 30px;
+        margin-top: 35px;
+        padding: 6px;
+      }
+      hr {
+        border: 2px inset teal;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Invasive Questionnaire</legend>
+        <h2>Free Response</h2>
+        <div id="text">
+          <label>What was the first thing you thought about this morning?</label>
+          <br>
+          <input type="text" name="morningthoughts" value="Enter Here">
+        </div>
+        <div id="text">
+          <label>How many times a day do you shower?</label>
+          <br>
+          <input type="text" name="shower" value="Enter Here">
+        </div>
+        <div id="text">
+          <label>How much do you weigh?</label>
+          <br>
+          <input type="text" name="weight" value="Enter Here">
+        </div>
+        <h2>Multiple Choice</h2>
+        <p>How old are you?</p>
+        <div id="radio">
+          <input type="radio" id="kid" name="age" value="kid">
+            <label for="kid">
+              0-12
+            </label>
+        </div>
+        <div id="radio">
+          <input type="radio" id="teen" name="age" value="teen">
+            <label for="teen">
+              13-19
+            </label>
+        </div>
+        <div id="radio">
+          <input type="radio" id="adult" name="age" value="adult">
+            <label for="adult">
+              20-500+
+            </label>
+        </div>
+        <h2>Checkboxes</h2>
+        <div>
+          <p>What days a week do you work?</p>
+          <input
+            type="checkbox"
+            id="sunday"
+            name="day1"
+            value="sunday"
+          >
+          <label class="checkboxLabels" for="sunday">Sunday</label>
+
+          <br>
+
+          <input
+            type="checkbox"
+            id="monday"
+            name="day1"
+            value="monday"
+          >
+          <label class="checkboxLabels" for="monday">Monday</label>
+
+          <br>
+
+          <input
+            type="checkbox"
+            id="tuesday"
+            name="day1"
+            value="tuesday"
+          >
+          <label class="checkboxLabels" for="tuesday">Tuesday</label>
+          <br>
+
+          <input
+            type="checkbox"
+            id="wednesday"
+            name="day1"
+            value="wednesday"
+          >
+          <label class="checkboxLabels" for="wednesday">Wednesday</label>
+
+          <br>
+
+          <input
+            type="checkbox"
+            id="thursday"
+            name="day1"
+            value="thursday"
+          >
+          <label class="checkboxLabels" for="thursday">Thursday</label>
+
+          <br>
+
+          <input
+            type="checkbox"
+            id="friday"
+            name="day1"
+            value="friday"
+          >
+          <label class="checkboxLabels" for="friday">Friday</label>
+
+          <br>
+
+          <input
+            type="checkbox"
+            id="saturday"
+            name="day1"
+            value="saturday"
+          >
+          <label class="checkboxLabels" for="saturday">Saturday</label>
+        </div>
+        <input type="submit" value="Share Personal Information">
+        <hr>
+        <input type="reset" value="I change my mind">
+      </fieldset>
+    </form>
+  </body>
+</html>
