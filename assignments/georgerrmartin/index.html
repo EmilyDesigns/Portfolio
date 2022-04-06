@@ -5,9 +5,10 @@
     <link href='https://fonts.googleapis.com/css?family=Montaga' rel='stylesheet' type='text/css'>
     <style>
       body {
-        background-image: url(https://images.unsplash.com/photo-1525468568166-6f2cd17c7ec9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80);
-        background-repeat: ;no-repeat;
-        background-position: center, top;
+        background-image: url(https://images.unsplash.com/photo-1541140134513-85a161dc4a00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
       }
         header {
           background-color: ;red;
@@ -24,6 +25,13 @@
           background-repeat: no-repeat;
           width: 80px;
         }
+        .shield:hover {
+          background-image: url(images/shield.gif);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 80px;
+        }
         #george {
           background-color: ;cyan;
         }
@@ -34,7 +42,6 @@
           display: flex;
         }
         nav ul{
-          background: linear-gradient(to top,#d9d9d9,#f7f7f7);
           max-width: 1000px;
           margin-left: auto;
           margin-right: auto;
@@ -62,7 +69,7 @@
           background: linear-gradient(to top,#d9d9d9,#f7f7f7);
         }
         section {
-          background-color: pink;
+          background-color: gray;
           max-width: 1000px;
           margin-left: auto;
           margin-right: auto;
@@ -76,6 +83,7 @@
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
+          border: 3px solid #b8b8b8;
           height: 270px;
         }
         .Hcardholder {
@@ -86,6 +94,25 @@
         }
         .Hcard {
           background-color: yellow;
+          border: 3px solid #b8b8b8;
+        }
+        #card1 {
+          background-image: url(images/card1.jpeg);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        #card2 {
+          background-image: url(images/card2.png);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        #card3 {
+          background-image: url(images/card3.jpeg);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
         }
         .cardsNcontent {
           background-color: lavender;
@@ -99,13 +126,34 @@
           background-color: orange;
           display: grid;
           grid-template-rows: 1fr 3fr;
+          border: 3px solid #b8b8b8;
         }
         .verticalCard {
           background-color: lime;
         }
         .article {
-          background-color: seagreen;
+          background-color: #DEDEDE;
+          border: 3px solid #b8b8b8;
           grid-column: 2 / 4;
+        }
+        h1 {
+          font-family: 'Montaga', serif;
+          font-size: 24px;
+        }
+        h2 {
+          color: #3b618c;
+          font-family: 'Montaga', serif;
+          font-size: 19px;
+        }
+        article {
+          margin: 3%;
+        }
+        p a {
+          color: #3b618c;
+          text-decoration: underline;
+        }
+        #notablog {
+          margin-top: 65px;
         }
         @media screen and (max-width: 480px) {
           .slide {
@@ -115,7 +163,24 @@
             flex-direction: column;
             line-height: 22pt;
           }
+          .cardsNcontent {
+            grid-row-gap: 10px;
+            grid-template-rows: 4fr 1fr;
+            grid-template-areas:
+              "article article article"
+              "cards   cards   cards"
+            ;
           }
+          .article {
+            grid-area: article;
+          }
+          .Vcards {
+            grid-area: cards;
+          }
+          section {
+            grid-template-rows: auto auto 5fr;
+          }
+        }
     </style>
   </head>
   <body>
@@ -149,14 +214,14 @@
           <!--<img style="width: 50vw" src="images/slide.jpeg" alt="slide" />-->
         </div>
         <div class="Hcardholder">
-          <div class="Hcard">
-            <img style="width: 100%" src="images/card1.jpeg" alt="card1" />
+          <div id="card1" class="Hcard">
+            <!--<img style="width: 100%" src="images/card1.jpeg" alt="card1" />-->
           </div>
-          <div class="Hcard">
-            <img style="width: 100%" src="images/card2.png" alt="card2" />
+          <div id="card2" class="Hcard">
+            <!--<img style="width: 100%" src="images/card2.png" alt="card2" />-->
           </div>
-          <div class="Hcard">
-            <img style="width: 100%" src="images/card3.jpeg" alt="card3" />
+          <div id="card3" class="Hcard">
+            <!--<img style="width: 100%" src="images/card3.jpeg" alt="card3" />-->
           </div>
         </div>
         <div class="cardsNcontent">
@@ -169,11 +234,93 @@
             </div>
           </div>
           <div class="article">
-            erg
+            <article>
+              <h1>
+                CURRENT GRRM BLOG POSTS
+              </h1>
+              <a href="#">
+                <h2>
+                  The Dragons Are Coming...
+                </h2>
+              </a>
+              <p>
+                 … they’re on the wing, and will be arriving in August. Details here: https://variety.com/2022/tv/news/game-of-thrones-house-of-the-dragon-premiere-date-1235215983/
+                 <a href="#">
+                   Read more »
+                 </a>
+              </p>
+              <a href="#">
+                <h2>
+                  THE RISE OF THE DRAGON
+                </h2>
+              </a>
+              <p>
+                We’re so excited to announce The Rise of The Dragon, a lavish visual history of House Targaryen – the iconic family at the heart of HBO’s Game of Thrones prequel series, House of the Dragon – featuring over 180 all-new…
+                <a href="#">
+                  Read more »
+                </a>
+              </p>
+              <a href="#">
+                <h2>
+                  Dealer Takes Two
+                </h2>
+              </a>
+              <p>
+                Kings and deuces may not be as iconic… or ominous… a poker hand as aces and eights, but it’s not a bad hand to be dealt… and Tor will be dealing those cards to all the Wild Cards fans out…
+                <a href="#">
+                  Read more »
+                </a>
+              </p>
+              <a href="#">
+                <h2>
+                  Random Updates and Bits o'News
+                </h2>
+              </a>
+              <p>
+                I look around, and I don’t know where 2021 went.   I blinked and it was gone.   Not a year that I am going to mourn much, any more than 2020.  A global pandemic, so many deaths (including friends of mine,…
+                <a href="#">Read more »
+                </a>
+              </p>
+              <a href="#">
+                <h2>
+                  World of Fire and Blood Calendar 2023
+                </h2>
+              </a>
+              <p>
+                We have some beautiful art for next years calendar. This time around we’re focusing on a whole World of Ice and Fire theme with amazing new artwork by a collaboration of amazing artists.  Check out some of their outstanding work coming…
+                <a href="#">
+                  Read more »
+                </a>
+              </p>
+              <a href="#">
+                <h2>
+                  End of an Era
+                </h2>
+              </a>
+              <p>
+                Our friend Janis Ian was in Santa Fe last week, at the Jean Cocteau Cinema.   It was the first stop of her new tour.  She did three shows for us (Thursday, Friday, and Saturday nights, all sold out), and on…
+                <a href="#">
+                  Read more »
+                </a>
+              </p>
+              <a href="#">
+                <h2>
+                  The Cards Keep Turning
+                </h2>
+              </a>
+              <p>
+                Wild Cards fans have a lot to look forward to in the next couple of years, in addition to the Marvel comics series announced below. We have three new books in the pipeline.   FULL HOUSE will be a collection of…
+                <a href="#">
+                  Read more »
+                </a>
+              </p>
+              <a href="#">
+                <img id="notablog" src="images/not-a-blog.png" alt="notablog"/>
+              </a>
+            </article>
           </div>
         </div>
       </section>
     </main>
   </body>
 </html>
-<!-- <img src="images/header.jpeg" alt="header" /> -->
