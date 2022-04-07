@@ -69,16 +69,15 @@
           background: linear-gradient(to top,#d9d9d9,#f7f7f7);
         }
         section {
-          background-color: gray;
+          background-color: #707070;
           max-width: 1000px;
           margin-left: auto;
           margin-right: auto;
           display: grid;
-          grid-template-rows: 1fr auto 5fr;
+          grid-template-rows: 1fr auto 3.6fr;
           grid-row-gap: 4px;
         }
         .slide {
-          background-color: red;
           background-image: url(images/slide.jpeg);
           background-size: cover;
           background-position: center;
@@ -87,14 +86,15 @@
           height: 270px;
         }
         .Hcardholder {
-          background-color: cyan;
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           grid-column-gap: 4px;
+          margin-top: 8px;
         }
         .Hcard {
           background-color: yellow;
           border: 3px solid #b8b8b8;
+          height: 150px;
         }
         #card1 {
           background-image: url(images/card1.jpeg);
@@ -115,7 +115,6 @@
           background-repeat: no-repeat;
         }
         .cardsNcontent {
-          background-color: lavender;
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           grid-column-gap: 4px;
@@ -123,13 +122,18 @@
 
         }
         .Vcards {
-          background-color: orange;
           display: grid;
-          grid-template-rows: 1fr 3fr;
-          border: 3px solid #b8b8b8;
+          grid-template-rows: ;
+          align-items: flex-start;
         }
         .verticalCard {
-          background-color: lime;
+          border: 3px solid #b8b8b8;
+        }
+        #topCard {
+          background-image: url(images/card4V.jpeg);
+          background-position: bottom center;
+          background-size: cover;
+          height: 165px;
         }
         .article {
           background-color: #DEDEDE;
@@ -145,6 +149,49 @@
           font-family: 'Montaga', serif;
           font-size: 19px;
         }
+        h3 {
+          color: white;
+          font-family: 'Montaga', serif;
+          margin-left: 30px;
+        }
+        #topCard p {
+          color: #cfc469;
+          margin-left: 30px;
+        }
+        #topCard #p2 {
+          color: white;
+          margin-top: 2px;
+        }
+        #appearances {
+          margin-left: 10px;
+          margin-bottom: 15px;
+        }
+        #topCard2 {
+          background-image: url(images/card5V.jpeg);
+          background-position: bottom center;
+          background-size: cover;
+          height: 300px;
+        }
+        #topCard2 p {
+          color: white;
+          margin-left: 30px;
+        }
+        #pubs {
+          margin-left: 10px;
+          margin-top: 9px;
+        }
+        #bottomCard2 {
+          background-image: url(images/card6V.jpeg);
+          background-position: center;
+          background-size: cover;
+          height: 250px;
+        }
+        #bottomCard1 {
+          background-image: url(images/card7V.jpeg);
+          background-position: center;
+          background-size: cover;
+          height: 250px;
+        }
         article {
           margin: 3%;
         }
@@ -154,6 +201,10 @@
         }
         #notablog {
           margin-top: 65px;
+        }
+        footer {
+          text-align: center;
+          margin: 18px;
         }
         @media screen and (max-width: 480px) {
           .slide {
@@ -165,11 +216,14 @@
           }
           .cardsNcontent {
             grid-row-gap: 10px;
-            grid-template-rows: 4fr 1fr;
+            grid-template-rows: 4fr auto;
             grid-template-areas:
               "article article article"
               "cards   cards   cards"
             ;
+          }
+          .Hcard {
+            height: 60px;
           }
           .article {
             grid-area: article;
@@ -178,7 +232,40 @@
             grid-area: cards;
           }
           section {
-            grid-template-rows: auto auto 5fr;
+            grid-template-rows: auto auto;
+          }
+          #notablog {
+            flex: 1;
+          }
+          #buttonContainer {
+            display: flex;
+            justify-content: space-around;
+          }
+          #bottomCard1, #bottomCard2 {
+            height: 350px;
+          }
+          .shield {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 43px;
+          }
+          .shield:hover {
+          background-image: url(images/shield.jpeg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 40px;
+          }
+          .social {
+            justify-content: space-between;
+            width: 120px;
+          }
+          .social a img {
+            width: 30px;
+          }
+          .Hcardholder {
+            margin-top: 5px;
           }
         }
     </style>
@@ -192,9 +279,9 @@
           <img style="width: 100%" src="images/header.jpeg" alt="header"/>
         </div>
         <div class="social">
-          <a href="#"><img style="width: 100%" src="images/facebook.jpeg" alt="facebook" /></a>
-          <a href="#"><img style="width: 100%" src="images/twitter.jpeg" alt="facebook" /></a>
-          <a href="#"><img style="width: 100%" src="images/crown.jpeg" alt="facebook" /></a>
+          <a href="#"><img style="width: ;100%" src="images/facebook.jpeg" alt="facebook" /></a>
+          <a href="#"><img style="width: ;100%" src="images/twitter.jpeg" alt="facebook" /></a>
+          <a href="#"><img style="width: ;100%" src="images/crown.jpeg" alt="facebook" /></a>
         </div>
       </header>
      <main>
@@ -210,28 +297,53 @@
           </ul>
         </nav>
       <section>
-        <div class="slide">
-          <!--<img style="width: 50vw" src="images/slide.jpeg" alt="slide" />-->
-        </div>
+        <a href="#">
+          <div class="slide">
+          </div>
+        </a>
         <div class="Hcardholder">
-          <div id="card1" class="Hcard">
-            <!--<img style="width: 100%" src="images/card1.jpeg" alt="card1" />-->
-          </div>
-          <div id="card2" class="Hcard">
-            <!--<img style="width: 100%" src="images/card2.png" alt="card2" />-->
-          </div>
-          <div id="card3" class="Hcard">
-            <!--<img style="width: 100%" src="images/card3.jpeg" alt="card3" />-->
-          </div>
+          <a href="#">
+            <div id="card1" class="Hcard">
+            </div>
+          </a>
+          <a href="#">
+            <div id="card2" class="Hcard">
+            </div>
+          </a>
+          <a href="#">
+            <div id="card3" class="Hcard">
+            </div>
+          </a>
         </div>
         <div class="cardsNcontent">
           <div class="Vcards">
-            <div class="verticalCard">
-              <!--<img src="images/card4V.jpeg" alt="card4" />-->
+            <div id="topCard" class="verticalCard">
+              <h3>NEXT APPEARANCE</h3>
+              <p>September 1-5 2022
+                <br>
+                <span style="color: white;">
+                  2022 Worldcon in Chicago 8
+                </span>
+              </p>
+              <a href="#">
+                <img id="appearances" src="images/more-appearances.jpeg" alt="moreAppearances"/>
+              </a>
             </div>
-            <div class="verticalCard">
-              #####<!--<img src="images/card4V.jpeg" alt="card4" />-->
+            <div id="topCard2" class="verticalCard">
+              <h3>NEXT PUBLICATION</h3>
+              <p>Check back soon for more information on future releases.</p>
+              <a href="#">
+                <img id="pubs" src="images/view-pubs.png" />
+              </a>
             </div>
+            <a href="#">
+              <div id="bottomCard2" class="verticalCard">
+              </div>
+            </a>
+            <a href="#">
+              <div id="bottomCard1" class="verticalCard">
+              </div>
+            </a>
           </div>
           <div class="article">
             <article>
@@ -314,13 +426,18 @@
                   Read more »
                 </a>
               </p>
-              <a href="#">
-                <img id="notablog" src="images/not-a-blog.png" alt="notablog"/>
-              </a>
+              <div id="buttonContainer">
+                <a href="#">
+                  <img id="notablog" src="images/not-a-blog.png" alt="notablog"/>
+                </a>
+              </div>
             </article>
           </div>
         </div>
       </section>
     </main>
+    <footer>
+      © 2022 GEORGE R.R. MARTIN. ALL RIGHTS RESERVED.
+    </footer>
   </body>
 </html>
