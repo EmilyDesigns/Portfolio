@@ -252,19 +252,39 @@
       font-size: 34px;
       text-align: center;
     }
-    #button {
+    h3 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 25px;
+      color: #0B3954;
+    }
+    #contactButton {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 60px;
+      margin-bottom: 25px;
+    }
+    input[type=button] {
       background-color: #FF5A5F;
-      font-family: myriad pro;
+      border-radius: 50px;
+      border: 0;
       color: white;
-      display: inline-block;
-      padding: 10px;
-      margin: center;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 18px;
+      padding: 13px 30px 10px 30px;
+      margin-bottom: 50px;
+    }
+    input[type=button]:hover {
+      cursor: pointer;
+    }
+    #contactLink:hover {
+      cursor: default;
     }
     .contact {
       background-color: gray;
       display: grid;
     }
-
     @media screen and (max-width: 480px) {
       #bg-white {
         background: white;
@@ -461,14 +481,12 @@
             </div>
           </a>
         </main>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <!--GALLERY-->
-        <!--line 1-->
-
+        <div id="contactButton">
+          <h3>Like What You See?</h3>
+          <a id="contactLink" href="https://emilydesigns.github.io/Portfolio/contactme">
+            <input type="button" value="Contact Me">
+          </a>
+        </div>
         <footer>
           <!--<div id="logo2">
             EL

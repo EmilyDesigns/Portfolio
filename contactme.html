@@ -60,6 +60,22 @@
         margin-top: 8%;
         margin-bottom: 8%;
       }
+      #contactContainer {
+
+      }
+      @media screen and (max-width: 480px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+        #contactBubbles {
+          background-image: url(images/contact.png);
+          background-position: center;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          height: 375px;
+          background-color: yellow;
+        }
+      }
     </style>
   </head>
   <body>
@@ -80,9 +96,8 @@
           </ul>
         </nav>
         <main>
-          <section class="contact">
-            <div id="contactinfo">
-              <img style="width: 95%" src="images/contact.png" alt="contactinfo" />
+          <section class="contactContainer">
+              <div id="contactBubbles">
             </div>
           </section>
           <section style="background-color: lavender" class="form">
@@ -90,9 +105,7 @@
           </section>
         </main>
         <footer>
-          <div id="logo2">
-            EL
-          </div>
+
         </footer>
      <!--White Center-->
      </div>
