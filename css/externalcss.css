@@ -6,6 +6,7 @@
 }
 body {
   background-color: #F7F9F7;
+  margin: 0;
 }
 #bg-white {
   background: white;
@@ -57,4 +58,10 @@ footer {
 }
 .list:active {
   color: white;
+}
+@media screen and (max-width: 480px) {
+  #bg-white {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

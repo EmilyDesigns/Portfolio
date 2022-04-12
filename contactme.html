@@ -3,6 +3,9 @@
   <head>
     <title>Emily Llauro Portfolio</title>
     <link href="css/externalcss.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <style>
       #logo {
         display: block;
@@ -12,8 +15,7 @@
       nav {
         background: linear-gradient(to top,#0B3954,#135e8a);
         color: white;
-        font-family: adrianna;
-        font-size: 25px;
+        font-family: 'Josefin Sans', sans-serif;
         padding: 1px;
       }
       #portnav {
@@ -42,14 +44,30 @@
       }
       h1 {
         color: white;
-        font-family: adrianna;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2vw;
         position: relative;
-        top: 50px;
+        top: 13.9vw;
+        left: 12.5vw;
       }
       h2 {
         color: #0B3954;
-        font-family: adrianna;
+        font-family: 'Josefin Sans', sans-serif;
         font-size: 45px;
+      }
+      #info {
+        color: white;
+        font-family: myriad pro;
+        font-size: 1.4vw;
+        margin-top: 15vw;
+        margin-left: 12.5vw;
+      }
+      #info2 {
+        color: white;
+        font-family: myriad pro;
+        font-size: 1.4vw;
+        margin-top: 1.5vw;
+        margin-left: 12.5vw;
       }
       main {
         background-color: pink;
@@ -60,8 +78,16 @@
         margin-top: 8%;
         margin-bottom: 8%;
       }
-      #contactContainer {
-
+      #contactBubbles {
+        background-image: url(images/contact.png);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 35vw;
+        width: 35vw;
+        background-color: yellow;
+        margin-top: 30px;
+        margin-left: 70px;
       }
       @media screen and (max-width: 480px) {
         main {
@@ -74,6 +100,10 @@
           background-repeat: no-repeat;
           height: 375px;
           background-color: yellow;
+          margin-top: 30px;
+        }
+        h2 {
+          text-align: center;
         }
       }
     </style>
@@ -97,7 +127,19 @@
         </nav>
         <main>
           <section class="contactContainer">
-              <div id="contactBubbles">
+            <div id="contactBubbles">
+                <h1>Contact Info</h1>
+                <p id="info">
+                  Call / Text
+                  <br>
+                  123-456-789
+                </p>
+                <p id="info2">
+                  Email
+                  <br>
+                  EA_Llauro@aol.com
+                </p>
+
             </div>
           </section>
           <section style="background-color: lavender" class="form">

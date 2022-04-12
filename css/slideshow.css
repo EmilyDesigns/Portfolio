@@ -1,0 +1,36 @@
+h1 {
+  font-family: arial;
+  margin-left: 105px;
+  display: block;
+}
+
+#slideshow {
+  height: 400px;
+  text-align: center;
+}
+
+.slideshowImage {
+  width: 500px;
+}
+
+img {
+  border: 10px groove purple;
+}
+
+input {
+  margin-top: 400px;
+  background-color: purple;
+  color: white;
+  font-family: arial;
+  font-size: 25px;
+  padding: 20px;
+  border: 0;
+}
+
+#next {
+  width: 120px;
+}
+
+#buttons {
+  margin-left: 125px;
+}

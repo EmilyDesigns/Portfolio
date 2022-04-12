@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>HELLO WORLD</title>
+    <link type="text/css" rel="stylesheet" href="../css/slideshow.css">
+  </head>
+  <body>
+    <h1>Emily's Art Museum</h1>
+    <div id="slideshow">
+      <img id="slide1" class="slideshowImage" src="../images/illustration/senku.jpg" alt="senku"/>
+      <img id="slide2" class="slideshowImage" src="../images/illustration/gen.jpg" alt="gen"/>
+      <img id="slide3" class="slideshowImage" src="../images/illustration/feitan.jpg" alt="feitan"/>
+      <img id="slide4" class="slideshowImage" src="../images/illustration/karma.jpeg" alt="karma"/>
+      <img id="slide5" class="slideshowImage" src="../images/illustration/eren.jpeg" alt="eren"/>
+    </div>
+    <div id="buttons">
+      <input
+        type="button"
+        id="previous"
+        value="Previous"
+        onclick="showPreviousSlide()"
+      >
+      <input
+        type="button"
+        id="next"
+        value="Next"
+        onclick="showNextSlide()"
+      >
+    </div>
+
+    <script type="text/javascript" src="../js/slideshow.js"></script>
+  </body>
+</html>
