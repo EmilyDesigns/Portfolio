@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>jQuery - Dropdown Menu</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url(../images/beach.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        font-family: verdana;
+        color: white;
+        text-shadow: 1px 1px 6px red;
+      }
+      #barrelLuffy {
+        margin-left: 100px;
+      }
+      #happyLuffy {
+        margins: auto;
+      }
+      #popupContainer {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #popupContainer.popupOpen {
+        display: flex;
+      }
+
+      #popupBackground {
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+      }
+
+      #popup {
+        position: relative;
+        z-index: 1;
+        border: 5px inset gold;
+        border-radius: 24px;
+        padding: 36px;
+        background-color: white;
+        min-width: 400px;
+        text-align: center;
+      }
+      .popupTrigger {
+        background-color: teal;
+        border-radius: 30px;
+        display: block;
+        font-family: verdana;
+        font-size: 20px;
+        text-align: center;
+        width: 300px;
+        color: white;
+        padding: 20px;
+      }
+      .popupTrigger:hover {
+        cursor: pointer;
+      }
+      #popup .closePopup {
+        margin-top: 36px;
+      }
+      .closePopup:hover {
+        cursor: pointer;
+        color: red;
+      }
+      .close {
+        font-family: arial;
+        font-size: 18px;
+      }
+      .text {
+        font-family: arial;
+        font-size: 25px;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>Become a Straw Hat Pirate Today</h1>
+
+    <img id="barrelLuffy" src="../images/luffy.png" alt="straw hat luffy" />
+
+    <div class="popupTrigger">Ask To Join Luffy's Crew</div>
+
+    <div id="popupContainer">
+      <div id="popupBackground" class="closePopup"></div>
+      <div id="popup">
+        <img id="happyLuffy" src="../images/luffypop.gif" alt="happy luffy"/>
+        <div class="text">Welcome aboard!  Your captain is the future <b>King of the Pirates!</b></div>
+        <div class="closePopup close">Close</div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $('.popupTrigger').click(
+        function() {
+          $('#popupContainer').addClass('popupOpen')
+        }
+      );
+
+      $('.closePopup').click(
+        function() {
+          $('#popupContainer').removeClass('popupOpen');
+        }
+      );
+    </script>
+  </body>
+</html>
