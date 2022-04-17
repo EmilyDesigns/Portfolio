@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <style>
+      #bg-white {
+        height: auto;
+      }
       #logo {
         display: block;
         margin-left: auto;
@@ -53,25 +56,33 @@
       h2 {
         color: #0B3954;
         font-family: 'Josefin Sans', sans-serif;
-        font-size: 45px;
-        margin-top: 125px;
+        font-size: 2.5vw;
+        margin-top: 3vw;
+        margin-left: 3vw;
+        margin-bottom: 25px;
+      }
+      hr {
+        margin-left: 3vw;
+        margin-right: 4vw;
+        margin-bottom: 25px;
+        border: 1px solid #0B3954;
       }
       #info {
         color: white;
-        font-family: myriad pro;
+        font-family: arial;
         font-size: 1.4vw;
         margin-top: 15vw;
         margin-left: 12.5vw;
       }
       #info2 {
         color: white;
-        font-family: myriad pro;
+        font-family: arial;
         font-size: 1.4vw;
         margin-top: 1.5vw;
         margin-left: 12.5vw;
       }
       main {
-        background-color: pink;
+        background-color: ;pink;
         display: grid;
         grid-template-columns: 1fr 1fr;
       }
@@ -79,46 +90,167 @@
         margin-top: 8%;
         margin-bottom: 8%;
       }
+      .contactContainer {
+        height: 15vw;
+      }
       #contactBubbles {
         background-image: url(images/contact.png);
         background-position: center;
         background-size: 100%;
         background-repeat: no-repeat;
-        height: 35vw;
-        width: 35vw;
-        background-color: ;yellow;
-        margin-top: 40px;
+        height: 33vw;
+        width: 33vw;
+        background-color: yellow;
+        margin-top: 20px;
         margin-left: 70px;
       }
-      @media screen and (max-width: 480px) {
+      #formContainer {
+        background-color: lightgreen;
+        width: 100%;
+      }
+      #notice {
+        margin-left: 3vw;
+        font-family: arial;
+      }
+      form {
+        background-color: blue;
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: auto auto;
+        margin-left: 3vw;
+        margin-right: 7%;
+      }
+      label {
+        display: block;
+        font-family: arial;
+        font-size: 1.2vw;
+        margin-bottom: 10px;
+        color: #0B3954;
+      }
+      input[type=text] {
+        border-radius: 55px;
+        border: 1px solid black;
+        font-size: 18px;
+        width: 75%;
+        padding: 2.5%;
+      }
+      #message {
+        border-radius: 20px;
+        width: 87%;
+        height: 60%;
+      }
+      textarea {
+        resize: none;
+        padding: 2%;
+        font-size: 18px;
+        font-family: arial;
+      }
+      select {
+        border-radius: 55px;
+        padding: 1%;
+        font-size: 18px;
+      }
+      .formCompartment {
+        background-color: yellow;
+        padding: 2%;
+      }
+      .message {
+        grid-column: 1 / 3;
+        padding: 1.1%;
+      }
+      .topic {
+        grid-column: 1 / 3;
+        padding: 1.1%;
+      }
+      .send {
+        grid-column: 1 / 3;
+      }
+      footer {
+        margin-top: 100px;
+        height: 115px;
+      }
+
+
+      @media screen and (min-width: 481px) and (max-width: 1200px) {
+        #notice {
+          text-align: center;
+        }
         main {
           grid-template-columns: 1fr;
+          overflow: ;hidden;
+        }
+        form {
+          margin-left: 10%;
+          margin-right: 10%;
+        }
+      }
+      h2 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+      .contactContainer {
+        background-color: teal;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: auto;
+        height: auto;
+      }
+      #contactBubbles {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media screen and (max-width: 480px) {
+        #bg-white {
+          overflow: ;hidden;
+        }
+        hr {
+          margin-left: 0;
+          margin-right: 0;
+          width: 480px;
+        }
+        form {
+          margin-left: 0;
+          width: 100%;
+        }
+        main {
+          grid-template-columns: 1fr;
+          overflow: ;hidden;
         }
         #contactBubbles {
           background-image: url(images/contact.png);
           background-position: center;
-          background-size: 100%;
+          background-size: contain;
           background-repeat: no-repeat;
-          height: 90vw;
-          width: 90vw;
-          margin-top: 0;
-          margin-left: 0;
+          box-sizing: border-box;
+          height: 95vw;
+          width: 95vw;
+          margin-left: auto;
+          margin-right: auto;
+          background-color: red;
         }
         .contactContainer {
+          background-color: teal;
           display: flex;
+          flex-direction: column;
           justify-content: space-around;
-          margin-top: 25px;
+          align-items: center;
+          width: auto;
         }
         #info {
+          background-color: pink;
           color: white;
-          font-family: myriad pro;
+          font-family: arial;
           font-size: 4vw;
           margin-top: 33vw;
           margin-left: 31vw;
         }
         #info2 {
+          background-color: pink;
           color: white;
-          font-family: myriad pro;
+          font-family: arial;
           font-size: 4vw;
           margin-top: 1.5vw;
           margin-left: 31vw;
@@ -142,12 +274,9 @@
     <!--White Center-->
     <div id="bg-white">
     <!--White Center-->
-        <img id="logo" style="
-          height: 150px"
-          src="images/emily.png"
-          alt="logo"
-        />
-        <br>
+        <a href="https://emilydesigns.github.io/Portfolio/">
+          <img id="logo" style="height: 150px" src="images/emily.png" alt="logo" />
+        </a>
         <nav>
           <ul id="portnav">
             <li class="list"><a href="https://emilydesigns.github.io/Portfolio/">Portfolio </a><img width=15px src="images/chev.png" alt="arrow"/></li>
@@ -171,8 +300,48 @@
                 </p>
             </div>
           </section>
-          <section style="background-color: lavender" class="form">
+          <section style="background-color: ;lavender" class="form">
             <h2>Get In Touch</h2>
+            <hr>
+            <p id="notice">required fields are marked with an asterisk *</p>
+            <div id="formContainer">
+              <form>
+                <div class="formCompartment form1">
+                  <div>
+                    <label for="firstName">* First Name</label>
+                    <input type="text" id="firstName" name="firstName">
+                  </div>
+                </div>
+                <div class="formCompartment form2">
+                  <label for="lastName">* Last Name</label>
+                  <input type="text" id="lastName" name="lastName">
+                </div>
+                <div class="formCompartment form3">
+                  <label for="email">* Email</label>
+                  <input type="text" id="email" name="email">
+                </div>
+                <div class="formCompartment form4">
+                  <label for="phone"><span style="opacity: 0;">*</span> Phone</label>
+                  <input type="text" id="phone" name="phone">
+                </div>
+                <div class="formCompartment message">
+                  <label for="phone">* Message</label>
+                  <textarea id="message" rows="5" cols="30"></textarea>
+                </div>
+                <div class="formCompartment topic">
+                  <label for="topic">* Topic</label>
+                  <select id="topic" name="topic">
+                    <option value="selectTopic">--Select a topic--</option>
+                    <option value="selectTopic">Graphic Design</option>
+                    <option value="selectTopic">Illustration</option>
+                    <option value="selectTopic">Inquiry</option>
+                    <option value="selectTopic">Other</option>
+                </div>
+                <div class="formCompartment send">
+                  Send
+                </div>
+              </div>
+            </form>
           </section>
         </main>
         <footer>
