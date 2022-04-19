@@ -43,6 +43,13 @@
         transform: scale(2) rotate(180deg) translateY(200px);
         opacity: 0.25;
       }
+
+      #chevron {
+        transition: transform 0.5s;
+      }
+      #chevron:hover {
+        transform: rotate(180deg);
+      }
     </style>
   </head>
   <body>
@@ -54,5 +61,7 @@
     </h2>
     <div id="box"></div>
     <img id="gen" src="../images/gen.jpg" alt="gen" />
+
+    <img id="chevron" style="width: 15px; background-color: black;" src="../images/chevron.png" alt="arrow"/>
   </body>
 </html>

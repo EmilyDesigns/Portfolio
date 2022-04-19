@@ -11,6 +11,9 @@
     body {
       background-color: #F7F9F7;
     }
+    nav {
+      margin-bottom: 2.5vw;
+    }
     #bg-white {
       background: white;
       display: block;
@@ -77,7 +80,7 @@
     }
     .watch {
       background-image: url(https://emilydesigns.github.io/Portfolio/images/graphic_design/watch.jpg);
-      background-size: 100%;
+      background-size: 101%;
       background-repeat: no-repeat;
       background-position: center;
       transition: opacity 0.3s;
@@ -237,7 +240,7 @@
     }
     header {
       padding: 4%;
-      margin-bottom: 3%; /*100px*/
+      margin-bottom: 2.5vw;
       height: 400px;
       position: relative;
       background-size: cover;
@@ -292,12 +295,10 @@
       position: relative;
     }
     .dropDown {
+      font-size: 20px;
       position: absolute;
-      width: 100%;
-      background: linear-gradient(to top,#135e8a, #0B3954); /* #FF5A5F */
-      /* border-bottom: 5px solid #0B3954;
-      border-right: 5px solid #0B3954;
-      border-left: 5px solid #0B3954; */
+      width: 187px;
+      background: linear-gradient(to top,#135e8a, #0B3954);
       border-radius: 0px 0px 20px 20px;
       display: block;
       padding: 10px;
@@ -318,9 +319,20 @@
     nav {
       box-sizing: border-box;
     }
+    .dropDown > div:hover {
+      color: #FF5A5F;
+    }
+
+
+
     @media screen and (max-width: 480px) {
+      .dropDown {
+        top: 35px;
+        text-align: center;
+        left: 0;
+        width: 100%;
+      }
       #bg-white {
-        background: white;
         display: block;
         margin-right: 0%;
         margin-left: 0%;
@@ -334,11 +346,11 @@
         font-size: 22px;
       }
       .list {
-        margin: 20%;
         line-height: 1.7;
       }
       header {
         margin-bottom: 10%;
+        margin-top: 10%;
       }
       .gdphoto {
         width: 47vw;
@@ -396,13 +408,53 @@
         background: ;red;
       }
       .list {
-        margin: 5%;
-      }
-      header {
-        margin-bottom: 8%;
+        margin: ;
       }
     }
 
+    @media screen and (max-width: 889px) {
+      .list {
+        margin: 40px;
+      }
+      .dropDown {
+        margin-left: 30px;
+      }
+    }
+
+    @media screen and (max-width: 777px) {
+      .list {
+        margin: 30px;
+      }
+      .dropDown {
+        margin-left: 20px;
+      }
+    }
+
+    @media screen and (max-width: 702px) {
+      .list {
+        margin: 20px;
+      }
+      .dropDown {
+        margin-left: 10px;
+      }
+    }
+
+    @media screen and (max-width: 627px) {
+      .dropDown {
+        top: 30px;
+        margin-left: 80px;
+      }
+      .list {
+        margin: 30%;
+        line-height: 1.7;
+      }
+      #GD {
+        font-size: 37px;
+      }
+      #GDport {
+        font-size: 22px;
+      }
+    }
     </style>
   </head>
   <body>
@@ -415,14 +467,20 @@
         <nav>
           <ul id="portnav">
             <div class="navItem">
-              <li class="list">Portfolio</li>
-                <!--<img style="width: 15px" src="images/chev.png" alt="arrow"/>-->
+              <li class="list">
+                Portfolio
+                <img style="width: 15px;" src="images/chevron.png" alt="arrow"/>
+              </li>
                 <div class="dropDown">
                   <div>
-                    Graphic Design
+                    <a href="https://emilydesigns.github.io/Portfolio/illustrations">
+                      Digital Illustration
+                    </a>
                   </div>
                   <div>
-                    Illustration
+                    <a href="https://emilydesigns.github.io/Portfolio/">
+                      Graphic Design
+                    </a>
                   </div>
                 </div>
             </div>
@@ -438,9 +496,6 @@
             </div>
           </ul>
         </nav>
-        <br>
-        <br>
-        <br>
         <header>
           <h1 id="GD">Graphic Design</h1>
           <h2 id="GDport">Portfolio</h2>

@@ -11,6 +11,9 @@
     body {
       background-color: #F7F9F7;
     }
+    nav {
+      margin-bottom: 2.5vw;
+    }
     #bg-white {
       background: white;
       display: block;
@@ -229,7 +232,7 @@
     }
     header {
       padding: 4%;
-      margin-bottom: 3%; /*100px*/
+      margin-bottom: 2.5vw;
       height: 400px;
       position: relative;
       background-size: cover;
@@ -281,16 +284,23 @@
     .navItem {
       display: inline;
       box-sizing: border-box;
+      position: relative;
     }
     .dropDown {
+      font-size: 20px;
       position: absolute;
-      width: 100%;
-      background-color: red;
+      width: 187px;
+      background: linear-gradient(to top,#135e8a, #0B3954);
+      border-radius: 0px 0px 20px 20px;
       display: block;
       padding: 10px;
-      line-height: 30px;
+      line-height: 50px;
       text-align: left;
       box-sizing: border-box;
+      z-index: 1;
+      left: 0;
+      top: 51px;
+      margin-left: 45px;
     }
     li {
       box-sizing: border-box;
@@ -302,8 +312,14 @@
       box-sizing: border-box;
     }
     @media screen and (max-width: 480px) {
+      .dropDown {
+        width: 50%;
+        margin-left: 100px;
+        top: 35px;
+        text-align: center;
+      }
       #bg-white {
-        background: white;
+        background: red;
         display: block;
         margin-right: 0%;
         margin-left: 0%;
@@ -319,9 +335,6 @@
       .list {
         margin: 20%;
         line-height: 1.7;
-      }
-      header {
-        margin-bottom: 10%;
       }
       .gdphoto {
         width: 47vw;
@@ -341,9 +354,6 @@
       }
       .list {
         margin: 5%;
-      }
-      header {
-        margin-bottom: 8%;
       }
     }
 
@@ -370,32 +380,39 @@
         <nav>
           <ul id="portnav">
             <div class="navItem">
-              <li class="list">Portfolio</li>
-                <!--<img style="width: 15px" src="images/chev.png" alt="arrow"/>-->
+              <li class="list">
+                Portfolio
+                <img style="width: 15px;" src="images/chevron.png" alt="arrow"/>
+              </li>
                 <div class="dropDown">
                   <div>
-                    Graphic Design
+                    <a href="https://emilydesigns.github.io/Portfolio/illustrations">
+                      Digital Illustration
+                    </a>
                   </div>
                   <div>
-                    Illustration
+                    <a href="https://emilydesigns.github.io/Portfolio/">
+                      Graphic Design
+                    </a>
                   </div>
                 </div>
             </div>
             <div class="navItem">
               <li class="list">
-                <a href="https://emilydesigns.github.io/Portfolio/aboutme">About Me</a>
+                <a href="https://emilydesigns.github.io/Portfolio/aboutme">
+                  About Me
+                </a>
               </li>
             </div>
             <div class="navItem">
               <li class="list">
-                <a href="https://emilydesigns.github.io/Portfolio/contactme">Contact Me</a>
+                <a href="https://emilydesigns.github.io/Portfolio/contactme">
+                  Contact Me
+                </a>
               </li>
             </div>
           </ul>
         </nav>
-        <br>
-        <br>
-        <br>
         <header>
           <h1 id="DI">Digital Illustration</h1>
           <h2 id="DIport">Portfolio</h2>
