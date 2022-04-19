@@ -327,12 +327,17 @@
 
     @media screen and (max-width: 480px) {
       .dropDown {
-        top: 35px;
+        top: 50px;
         text-align: center;
-        left: 0;
+        margin-left: 0;
+        width: 100%;
+      }
+      .navItem {
+        display: inline-block;
         width: 100%;
       }
       #bg-white {
+        background-color: red;
         display: block;
         margin-right: 0%;
         margin-left: 0%;
@@ -403,16 +408,7 @@
       }
     }
 
-    @media screen and (max-width: 1031px) and (min-width: 481px) {
-      #bg-white {
-        background: ;red;
-      }
-      .list {
-        margin: ;
-      }
-    }
-
-    @media screen and (max-width: 889px) {
+    @media screen and (max-width: 889px) and (min-width: 481px) {
       .list {
         margin: 40px;
       }
@@ -421,7 +417,7 @@
       }
     }
 
-    @media screen and (max-width: 777px) {
+    @media screen and (max-width: 777px) and (min-width: 482px) {
       .list {
         margin: 30px;
       }
