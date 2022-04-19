@@ -60,10 +60,10 @@
       justify-content: space-between;
       align-content: center;
     }
-    .gdphoto img {
+    .diphoto img {
       width: 100%;
     }
-    .gdphoto {
+    .diphoto {
       background-color: gray;
       box-sizing: border-box;
       width: 19vw;
@@ -292,7 +292,6 @@
       width: 187px;
       background: linear-gradient(to top,#135e8a, #0B3954);
       border-radius: 0px 0px 20px 20px;
-      display: block;
       padding: 10px;
       line-height: 50px;
       text-align: left;
@@ -301,6 +300,10 @@
       left: 0;
       top: 51px;
       margin-left: 45px;
+      display: none;
+    }
+    .navItem.dropdownOpen .dropDown {
+      display: block;
     }
     li {
       box-sizing: border-box;
@@ -311,63 +314,66 @@
     nav {
       box-sizing: border-box;
     }
-    @media screen and (max-width: 480px) {
-      .dropDown {
-        width: 50%;
-        margin-left: 100px;
-        top: 35px;
-        text-align: center;
+
+    /*---------MEDIA QUERIES---------*/
+
+    @media screen and (max-width: 1031px) and (min-width: 680px) {
+      .list {
+        margin: 5%;
       }
+      .dropDown {
+        margin-left: 20px;
+      }
+    }
+
+    @media screen and (max-width: 681px) {
       #bg-white {
-        background: red;
         display: block;
         margin-right: 0%;
         margin-left: 0%;
         height: auto;
         overflow: hidden;
       }
-      #GD {
-        font-size: 37px;
+      .dropDown {
+        top: 45px;
+        text-align: center;
+        margin-left: 0;
+        width: 100%;
       }
-      #GDport {
-        font-size: 22px;
+      .navItem {
+        display: inline-block;
+        width: 100%;
       }
-      .list {
-        margin: 20%;
-        line-height: 1.7;
-      }
-      .gdphoto {
-        width: 47vw;
-        height: 47vw;
-      }
-      footer {
-        height: 115px;
-      }
-      #logo2 {
-        font-size: 95px;
-      }
-    }
-
-    @media screen and (max-width: 1031px) and (min-width: 481px) {
-      #bg-white {
-        background: ;red;
-      }
-      .list {
-        margin: 5%;
-      }
-    }
-
-    @media screen and (max-width: 480px) {
       #DI {
         font-size: 38px;
       }
       #DIport {
         font-size: 28px;
       }
+      .list {
+        line-height: 1.7;
+      }
       .mermaid {
         background-size: 65vw;
       }
+      .diphoto {
+        width: 47vw;
+        height: 47vw;
+      }
+      header {
+        margin-bottom: 10%;
+        margin-top: 10%;
+      }
     }
+    @media screen and (max-width: 363px) {
+      #DI {
+        font-size: 30px;
+      }
+      #DIport {
+        font-size: 22px;
+      }
+    }
+
     </style>
   </head>
   <body>
@@ -380,7 +386,7 @@
         <nav>
           <ul id="portnav">
             <div class="navItem">
-              <li class="list">
+              <li class="list clickDropdown">
                 Portfolio
                 <img style="width: 15px;" src="images/chevron.png" alt="arrow"/>
               </li>
@@ -419,82 +425,82 @@
         </header>
         <main class="GDgallery">
           <a href ="https://emilydesigns.github.io/Portfolio/images/illustration/feitan.jpg">
-            <div class="gdphoto feitan">
+            <div class="diphoto feitan">
               <!--<img src="images/illustration/feitan.jpg" alt="feitan" />-->
             </div>
           </a>
           <a href="https://emilydesigns.github.io/Portfolio/images/illustration/eren.jpeg">
-            <div class="gdphoto eren">
+            <div class="diphoto eren">
               <!--<img src="images/illustration/eren.jpeg" alt="eren" />-->
             </div>
           </a>
           <a href="https://emilydesigns.github.io/Portfolio/images/illustration/luffy.jpeg">
-            <div class="gdphoto luffy">
+            <div class="diphoto luffy">
               <!--<img src="images/illustration/luffy.jpeg" alt="luffy" />-->
             </div>
           </a>
           <a href="https://emilydesigns.github.io/Portfolio/images/illustration/inosuke.jpeg">
-            <div class="gdphoto inosuke">
+            <div class="diphoto inosuke">
               <!--<img src="images/illustration/inosuke.jpeg" alt="inosuke" />-->
             </div>
           </a>
           <a href="https://emilydesigns.github.io/Portfolio/images/illustration/senku.jpg">
-            <div class="gdphoto senku">
+            <div class="diphoto senku">
               <!--<img src="images/illustration/senku.jpg" alt="senku" />-->
             </div>
           </a>
           <a href="https://emilydesigns.github.io/Portfolio/images/illustration/gen.jpg">
-            <div class="gdphoto gen">
+            <div class="diphoto gen">
               <!--<img src="images/illustration/gen.jpg" alt="gen" />-->
             </div>
           </a>
           <a href="https://emilydesigns.github.io/Portfolio/images/illustration/suzu.jpg">
-            <div class="gdphoto juuzou">
+            <div class="diphoto juuzou">
               <!--<img src="images/illustration/suzu.jpg" alt="juuzou" />-->
             </div>
           </a>
           <a href="https://emilydesigns.github.io/Portfolio/images/illustration/karma.jpeg">
-            <div class="gdphoto karma">
+            <div class="diphoto karma">
               <!--<img src="images/illustration/karma.jpeg" alt="karma" />-->
             </div>
           </a>
           <a href="https://emilydesigns.github.io/Portfolio/images/illustration/misa.jpg">
-            <div class="gdphoto misa">
+            <div class="diphoto misa">
               <!--<img src="images/illustration/misa.jpg" alt="misa" />-->
             </div>
           </a>
           <a href="https://emilydesigns.github.io/Portfolio/images/illustration/oc.jpg">
-            <div class="gdphoto oc">
+            <div class="diphoto oc">
               <!--<img src="images/illustration/oc.jpg" alt="original_character" />-->
             </div>
           </a>
           <a href="https://emilydesigns.github.io/Portfolio/images/illustration/sanji.jpeg">
-            <div class="gdphoto sanji">
+            <div class="diphoto sanji">
               <!--<img src="images/illustration/sanji.jpeg" alt="sanji" />-->
             </div>
           </a>
           <a href="https://emilydesigns.github.io/Portfolio/images/illustration/luffy2.jpeg">
-            <div class="gdphoto luffy2">
+            <div class="diphoto luffy2">
               <!--<img src="images/illustration/luffy2.jpeg" alt="luffy2" />-->
             </div>
           </a>
           <a href="https://emilydesigns.github.io/Portfolio/images/illustration/touka.jpg">
-            <div class="gdphoto touka">
+            <div class="diphoto touka">
               <!--<img src="images/illustration/touka.jpg" alt="touka" />-->
             </div>
           </a>
           <a href="https://emilydesigns.github.io/Portfolio/images/illustration/mermaid.jpg">
-            <div class="gdphoto mermaid">
+            <div class="diphoto mermaid">
               <!--<img src="images/illustration/mermaid.jpg" alt="mermaid" />-->
             </div>
           </a>
           <a href="https://emilydesigns.github.io/Portfolio/images/illustration/icecream.jpg">
-            <div class="gdphoto icecream">
+            <div class="diphoto icecream">
               <!--<img src="images/illustration/icecream.jpg" alt="icecream" />-->
             </div>
           </a>
           <a href="https://emilydesigns.github.io/Portfolio/images/illustration/oliver.jpg">
-            <div class="gdphoto oliver">
+            <div class="diphoto oliver">
               <!--<img src="images/illustration/oliver.jpg" alt="oliver" />-->
             </div>
           </a>
@@ -512,7 +518,16 @@
         </footer>
 
     <script type="text/javascript">
-
+    $('.clickDropdown').click(
+      function() {
+        if ($(this).hasClass('dropdownOpen')) {
+          $(this).removeClass('dropdownOpen');
+        }
+        else {
+          $(this).addClass('dropdownOpen');
+        }
+      }
+    );
     </script>
   </body>
 </html>
