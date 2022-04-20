@@ -134,6 +134,9 @@
         font-size: 18px;
         width: 75%;
         padding: 2.5%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
       }
       #message {
         border-radius: 20px;
@@ -145,11 +148,17 @@
         padding: 2%;
         font-size: 18px;
         font-family: arial;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
       }
       select {
         border-radius: 55px;
         padding: 1%;
         font-size: 18px;
+        width: 31vw;
+        margin-left: 1.5vw;
+        margin-right: 1.5vw;
       }
       .formCompartment {
         background-color: yellow;
@@ -165,6 +174,19 @@
       }
       .send {
         grid-column: 1 / 3;
+        padding: 1.1%;
+      }
+      #send {
+        background-color: #FF5A5F;
+        border-radius: 50px;
+        border: 0;
+        padding: 10px;
+        width: 110px;
+        color: white;
+        font-family: arial;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-left: 1.5vw;
       }
       .navItem {
         display: inline;
@@ -232,7 +254,9 @@
         .dropDown {
           margin-left: 20px;
         }
-
+        #bg-white {
+          background-color: orange;
+        }
       }
 
       @media screen and (min-width: 481px) and (max-width: 1200px) {
@@ -247,11 +271,24 @@
           margin-left: 10%;
           margin-right: 10%;
         }
+        #bg-white {
+          background-color: green;
+        }
+        label {
+          font-size: 2vw;
+        }
       }
 
       @media screen and (max-width: 480px) {
+        #notice {
+          text-align: center;
+        }
+        .contactContainer {
+          width: 100%;
+        }
         #bg-white {
           overflow: ;hidden;
+          background-color: gray;
         }
         hr {
           margin-left: 0;
@@ -266,14 +303,18 @@
           grid-template-columns: 1fr;
           overflow: ;hidden;
         }
+        label {
+          font-size: 4vw;
+          margin-left: 5vw;
+        }
         #contactBubbles {
           background-image: url(images/contact.png);
           background-position: center;
           background-size: contain;
           background-repeat: no-repeat;
           box-sizing: border-box;
-          height: 95vw;
-          width: 95vw;
+          height: 90vw;
+          width: 90vw;
           margin-left: auto;
           margin-right: auto;
           background-color: red;
@@ -284,10 +325,9 @@
           flex-direction: column;
           justify-content: space-around;
           align-items: center;
-          width: auto;
+          width: 100%;
         }
         #info {
-          background-color: pink;
           color: white;
           font-family: arial;
           font-size: 4vw;
@@ -295,7 +335,6 @@
           margin-left: 31vw;
         }
         #info2 {
-          background-color: pink;
           color: white;
           font-family: arial;
           font-size: 4vw;
@@ -313,9 +352,8 @@
         h2 {
           text-align: center;
           margin-top: 50px;
+          font-size: 7vw;
         }
-      }
-      @media screen and (max-width: 681px) {
         .dropDown {
           top: 45px;
           text-align: center;
@@ -328,6 +366,25 @@
         }
         .list {
           line-height: 1.7;
+        }
+      }
+      @media screen and (max-width: 681px) and (min-width: 481px){
+        .dropDown {
+          top: 45px;
+          text-align: center;
+          margin-left: 0;
+          width: 100%;
+        }
+        .navItem {
+          display: inline-block;
+          width: 100%;
+        }
+        .list {
+          line-height: 1.7;
+        }
+        label {
+          font-size: 3vw;
+          margin-left: 2.9vw;
         }
       }
     </style>
@@ -394,10 +451,8 @@
             <div id="formContainer">
               <form>
                 <div class="formCompartment form1">
-                  <div>
                     <label for="firstName">* First Name</label>
                     <input type="text" id="firstName" name="firstName">
-                  </div>
                 </div>
                 <div class="formCompartment form2">
                   <label for="lastName">* Last Name</label>
@@ -423,21 +478,21 @@
                     <option value="selectTopic">Illustration</option>
                     <option value="selectTopic">Inquiry</option>
                     <option value="selectTopic">Other</option>
+                  </select>
                 </div>
                 <div class="formCompartment send">
-                  Send
+                  <input id="send" type="submit" value="Send">
                 </div>
               </div>
             </form>
           </section>
         </main>
         <footer>
-
+          eresrbgsf
         </footer>
      <!--White Center-->
      </div>
      <!--White Center-->
-
      <script type="text/javascript">
      $('.navItem').click(
        function() {
