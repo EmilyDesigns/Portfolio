@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>Emily Llauro Portfolio</title>
+    <title>Emily Llauro Portfolio | About Me</title>
     <link href="css/externalcss.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <style>
-      #aboutmeinfo {
-        float: right;
-        margin-right: 125px;
-        display: block-element;
+      main {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        background-color: lavender;
+      }
+      article {
+        background-color: pink;
+        width: 100%;
+      }
+      hr {
+        margin-top: 20px;
+        margin-bottom: 25px;
+        border: 1px solid #0B3954;
       }
       p {
-        font-family: myriad pro;
+        font-family: arial;
         font-size: 19px;
       }
-      .aboutmeheading {
+      h1 {
         color: #0B3954;
-        font-family: adrianna;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2.5vw;
         margin-bottom: 2px;
       }
       #skills {
@@ -23,6 +40,97 @@
         height: 200px;
         margin-left: 125px;
         margin-right: 125px;
+      }
+      .navItem {
+        display: inline;
+        box-sizing: border-box;
+        position: relative;
+      }
+      .dropDown {
+        font-size: 20px;
+        position: absolute;
+        width: 187px;
+        background: linear-gradient(to top,#135e8a, #0B3954);
+        border-radius: 0px 0px 20px 20px;
+        display: block;
+        padding: 10px;
+        line-height: 50px;
+        text-align: left;
+        box-sizing: border-box;
+        z-index: 1;
+        left: 0;
+        top: 51px;
+        margin-left: 45px;
+        display: none;
+      }
+      .navItem.dropdownOpen .dropDown {
+        display: block;
+      }
+      .clickDropdown:hover {
+        cursor: pointer;
+      }
+
+      #aboutMePhoto {
+        background-image: url(images/aboutme.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 30vw;
+        width: 30vw;
+        background-color: red;
+      }
+      figure {
+        display: inline-block;
+        width: 25vw;
+        background-color: lightblue;
+        margin-block-start: 0;
+        margin-block-end: 0;
+      }
+
+      /*---------MEDIA QUERIES---------*/
+
+      @media screen and (max-width: 681px) {
+        .dropDown {
+          top: 45px;
+          text-align: center;
+          margin-left: 0;
+          width: 100%;
+        }
+        .navItem {
+          display: inline-block;
+          width: 100%;
+        }
+        .list {
+          line-height: 1.7;
+        }
+        figure {
+          display: block;
+          width: 100%;
+          height: 100%;
+          margin-left: 0;
+          display: flex;
+          justify-content: center;
+        }
+        #aboutMePhoto {
+          height: 375px;
+          width: 375px;
+        }
+        h1 {
+          text-align: center;
+          font-size: 33px;
+        }
+        p {
+          font-size: 16px;
+        }
+        article {
+          background-color: pink;
+          width: 100%;
+        }
+        main {
+          grid-template-columns: 1fr;
+          margin-left: 2%;
+          margin-right: 2%;
+        }
       }
     </style>
   </head>
@@ -35,51 +143,86 @@
         </a>
         <nav>
           <ul id="portnav">
-            <li class="list"><a href="https://emilydesigns.github.io/Portfolio/">Portfolio </a><img width=15px src="images/chev.png" alt="arrow"/></li>
-            <li class="list"><a href="https://emilydesigns.github.io/Portfolio/aboutme">About Me</a></li>
-            <li class="list"><a href="https://emilydesigns.github.io/Portfolio/contactme">Contact Me</a></li>
+            <div class="navItem">
+              <li class="list clickDropdown">
+                Portfolio
+                <img style="width: 15px;" src="images/chevron.png" alt="arrow"/>
+              </li>
+                <div class="dropDown">
+                  <div>
+                    <a href="https://emilydesigns.github.io/Portfolio/illustrations">
+                      Digital Illustration
+                    </a>
+                  </div>
+                  <div>
+                    <a href="https://emilydesigns.github.io/Portfolio/">
+                      Graphic Design
+                    </a>
+                  </div>
+                </div>
+            </div>
+            <div class="navItem">
+              <li class="list">
+                <a href="https://emilydesigns.github.io/Portfolio/aboutme">About Me</a>
+              </li>
+            </div>
+            <div class="navItem">
+              <li class="list">
+                <a href="https://emilydesigns.github.io/Portfolio/contactme">Contact Me</a>
+              </li>
+            </div>
           </ul>
         </nav>
+        <main>
+          <figure>
+            <div id="aboutMePhoto">
+              <!--<img style="width: 500px; margin-left: 125px" src="images/aboutme.png" alt="photo" />-->
+            </div>
+          </figure>
+          <article>
+            <h1>
+              About Me
+            </h1>
+            <hr>
+            <p>
+              Hello, my name is Emily A. Llauro and I am currently enrolled as a student at F.I.R.S.T. Institute.
+              In July of 2022, I will graduate with my diploma in Graphic Design and Web Development.
+              After graduation, I hope to combine my skills of illustration and graphic design to create book covers, posters, and other various items.
+            </p>
+            <p>
+              When I was a child, I participated in traditional drawing classes which sparked my desire to pursue art;
+              however, I am almost entirely self-taught. I have always had a passion for creating illustrations that I look forward to sharing with everyone.
+            </p>
+            <p>
+              In the future, I hope to use the experience I have gained to continue creating professional illustrations and graphic design projects including
+              manga covers and anime posters. Since I have a great interest in anime, I want to contribute to promoting the growth of new anime and manga with
+              their merchandise and campaigns.
+            </p>
+          </article>
+        </main>
         <br>
         <br>
         <br>
         <br>
-        <img style="width: 500px; margin-left: 125px" src="images/aboutme.png" alt="photo" />
-        <div id="aboutmeinfo">
-          <br>
-          <br>
-          <h1 class="aboutmeheading">
-            About Me
-          </h1>
-          <br>
-          <br>
-          <p>
-            Hello, my name is Emily A. Llauro and I am currently enrolled as a student at F.I.R.S.T. Institute.<br>
-            In July of 2022, I will graduate with my diploma in Graphic Design and Web Development.<br>
-            After graduation, I hope to combine my skills of illustration and graphic design to create <br>book covers, posters, and other various items.<br>
-            <br>
-            When I was a child, I participated in traditional drawing classes which sparked my desire to <br>pursue art;
-            however, I am almost entirely self-taught. I have always had a passion for creating <br>illustrations that I look forward to sharing with everyone.<br>
-            <br>
-            In the future, I hope to use the experience I have gained to continue creating professional <br>illustrations and graphic design projects including
-            manga covers and anime posters. <br>Since I have a great interest in anime, I want to contribute to promoting the growth of new <br>anime and manga with
-            their merchandise and campaigns.
-          </p>
-        </div>
         <br>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div id="skills">
-          <h1 class="aboutmeheading">
-          Skills
-          <hr>
-        </div>
+
         <footer>
           <div id="logo2">
           EL
           </div>
         </footer>
+        <script type="text/javascript">
+        $('.navItem').click(
+          function() {
+            if ($(this).hasClass('dropdownOpen')) {
+              $(this).removeClass('dropdownOpen');
+            }
+            else {
+              $(this).addClass('dropdownOpen');
+            }
+          }
+        );
+        </script>
+  </body>
 </html>

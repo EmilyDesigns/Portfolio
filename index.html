@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>Emily Llauro Portfolio</title>
+    <title>Emily Llauro Portfolio | Graphic Design</title>
     <link href="css/externalcss.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -309,6 +309,7 @@
       left: 0;
       top: 51px;
       margin-left: 45px;
+      display: none;
     }
     li {
       box-sizing: border-box;
@@ -322,8 +323,14 @@
     .dropDown > div:hover {
       color: #FF5A5F;
     }
+    .navItem.dropdownOpen .dropDown {
+      display: block;
+    }
+    .clickDropdown:hover {
+      cursor: pointer;
+    }
 
-
+    /*---------MEDIA QUERIES---------*/
 
     @media screen and (max-width: 889px) and (min-width: 481px) {
       .list {
@@ -598,7 +605,16 @@
         </footer>
 
     <script type="text/javascript">
-
+    $('.navItem').click(
+      function() {
+        if ($(this).hasClass('dropdownOpen')) {
+          $(this).removeClass('dropdownOpen');
+        }
+        else {
+          $(this).addClass('dropdownOpen');
+        }
+      }
+    );
     </script>
   </body>
 </html>
