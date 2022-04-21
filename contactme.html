@@ -51,8 +51,8 @@
         font-family: 'Josefin Sans', sans-serif;
         font-size: 2vw;
         position: relative;
-        top: 13.9vw;
-        left: 12.5vw;
+        top: 11vw;
+        left: 11.2vw;
       }
       h2 {
         color: #0B3954;
@@ -72,15 +72,15 @@
         color: white;
         font-family: arial;
         font-size: 1.4vw;
-        margin-top: 15vw;
-        margin-left: 12.5vw;
+        margin-top: 12.5vw;
+        margin-left: 11.2vw;
       }
       #info2 {
         color: white;
         font-family: arial;
         font-size: 1.4vw;
-        margin-top: 1.5vw;
-        margin-left: 12.5vw;
+        margin-top: 1.7vw;
+        margin-left: 11.2vw;
       }
       main {
         background-color: ;pink;
@@ -93,6 +93,9 @@
       }
       .contactContainer {
         height: 15vw;
+      }
+      #bubbleText {
+        margin-top: 5.5vw;
       }
       #contactBubbles {
         background-image: url(images/contact.png);
@@ -126,6 +129,7 @@
         font-family: arial;
         font-size: 1.2vw;
         margin-bottom: 10px;
+        margin-left: 1.7vw;
         color: #0B3954;
       }
       input[type=text] {
@@ -244,7 +248,9 @@
         margin-left: auto;
         margin-right: auto;
       }
-
+      footer {
+        margin-top: 100px;
+      }
       /*---------MEDIA QUERIES---------*/
 
       @media screen and (max-width: 1031px) and (min-width: 680px) {
@@ -260,8 +266,34 @@
       }
 
       @media screen and (min-width: 481px) and (max-width: 1200px) {
+        #contactBubbles {
+          height: 44vw;
+          width: 44vw;
+        }
+        h1 {
+          top: 15.5vw;
+          left: 15vw;
+          font-size: 2.7vw;
+        }
+        #info {
+          margin-left: 15vw;
+          margin-top: 17vw;
+          font-size: 1.7vw;
+        }
+        #info2 {
+          margin-left: 15vw;
+          font-size: 1.7vw;
+        }
+        h2 {
+          font-size: 4vw;
+        }
+        hr {
+          margin-left: 3vw;
+          margin-right: 3vw;
+        }
         #notice {
           text-align: center;
+          margin-left: 0;
         }
         main {
           grid-template-columns: 1fr;
@@ -276,6 +308,16 @@
         }
         label {
           font-size: 2vw;
+          margin-left: 2.5vw;
+        }
+        select {
+          margin-left: 2.7vw;
+          width: 56.8vw;
+        }
+        #send {
+          margin-left: 2.7vw;
+          margin-top: 50px;
+          width: 56.8vw;
         }
       }
 
@@ -287,13 +329,12 @@
           width: 100%;
         }
         #bg-white {
-          overflow: ;hidden;
+          overflow: hidden;
           background-color: gray;
         }
         hr {
           margin-left: 0;
           margin-right: 0;
-          width: 480px;
         }
         form {
           margin-left: 0;
@@ -367,6 +408,15 @@
         .list {
           line-height: 1.7;
         }
+        #send {
+          margin-left: 4vw;
+          margin-top: 70px;
+          width: 89.1vw;
+        }
+        select {
+          margin-left: 4vw;
+          width: 89.1vw;
+        }
       }
       @media screen and (max-width: 681px) and (min-width: 481px){
         .dropDown {
@@ -431,6 +481,7 @@
         <main>
           <section class="contactContainer">
             <div id="contactBubbles">
+              <!--<div id="bubbleText">-->
                 <h1>Contact Info</h1>
                 <p id="info">
                   Call / Text
@@ -442,6 +493,7 @@
                   <br>
                   EA_Llauro@aol.com
                 </p>
+              <!--</div>-->
             </div>
           </section>
           <section style="background-color: ;lavender" class="form">

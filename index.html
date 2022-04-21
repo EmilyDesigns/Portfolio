@@ -8,6 +8,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <style>
+    #footerStrip {
+      padding-top: 14px;
+      margin-top: 10px;
+    }
+    #footerGrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      height: 100%;
+    }
+    footer li {
+      list-style-type: none;
+      line-height: 25px;
+      color: white;
+      font-size: 16px;
+      font-family: arial;
+    }
+    .footerHeading {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 20px;
+    }
+    figure {
+      background-image: url(images/initials.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 150px;
+      width: 175px;
+    }
     body {
       background-color: #F7F9F7;
     }
@@ -599,9 +627,32 @@
           </a>
         </div>
         <footer>
-          <!--<div id="logo2">
-            EL
-          </div>-->
+          <div id="footerStrip">
+            <div id="footerGrid">
+              <figure>
+                <!--EL logo-->
+              </figure>
+              <div id="footerContact">
+                <ul>
+                  <li class="footerHeading">Contact Info</li>
+                  <li>EA_Llauro@aol.com</li>
+                  <li>123-456-789</li>
+                </ul>
+              </div>
+              <div id="footerPortfolio">
+                <ul>
+                  <li class="footerHeading">Portfolio</li>
+                  <li>Digital Illustration</li>
+                  <li>Graphic Design</li>
+                </ul>
+              </div>
+              <div id="footerAbout">
+                <ul>
+                  <li class="footerHeading">About Me</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </footer>
 
     <script type="text/javascript">
