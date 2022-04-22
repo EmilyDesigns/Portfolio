@@ -40,7 +40,7 @@ nav {
 }
 footer {
   background: linear-gradient(to top,#0B3954,#135e8a);
-  height: 200px;
+  height: 125px;
 }
 #logo2 {
   color: white;
@@ -61,9 +61,74 @@ footer {
 .list:active {
   color: white;
 }
+
+ul {
+  padding-inline-start: 0;
+}
+#footerStrip {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+#footerGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
+  height: 100%;
+}
+footer li {
+  list-style-type: none;
+  line-height: 25px;
+  color: white;
+  font-size: 16px;
+  font-family: arial;
+}
+.footerHeading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+}
+figure {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80px;
+  width: 100px;
+}
 @media screen and (max-width: 480px) {
   #bg-white {
     margin-left: 0;
     margin-right: 0;
+  }
+}
+/*FOOTER QUERIES*/
+@media screen and (max-width: 863px) {
+  footer li {
+    margin-inline-end: 30px;
+  }
+  #footerGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 11%;
+  }
+  figure {
+    display: none;
+    margin-inline-end: 20px;
+    margin-inline-start: 25px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #footerGrid {
+    margin-left: 9%;
+  }
+  #footerStrip {
+    padding-top: 4px;
+  }
+  footer li {
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #footerGrid {
+    margin-left: 8%;
+  }
+  footer li {
+    font-size: 14px;
   }
 }
